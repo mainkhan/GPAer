@@ -6,62 +6,65 @@ provides-nominal:
 provides-member:
 - ["C9GPAerFood14ViewController", ""]
 provides-dynamic-lookup:
-- "doneButtonAction"
+- "viewDidLoad"
+- "twelfthGradeLabel"
 - "schoolTextField"
+- "ninthGradeLabel"
+- "doneButtonAction"
+- "textFieldDidEndEditing"
+- "prepare"
+- "eleventhGradeLabel"
+- "touchesBegan"
+- "textFieldShouldReturn"
+- "lpgTextField"
 - "addDoneButtonOnKeyboard"
 - "tenthGradeLabel"
-- "ninthGradeLabel"
-- "viewDidLoad"
-- "textFieldShouldReturn"
-- "eleventhGradeLabel"
-- "lpgTextField"
-- "twelfthGradeLabel"
-- "ninthGradeEdit"
-- "touchesBegan"
-- "textFieldDidEndEditing"
 depends-top-level:
-- "ViewController"
-- "UITapGestureRecognizer"
-- "Set"
-- "UITouch"
-- "UITextField"
-- !private "!="
-- !private "UIBarButtonItem"
-- !private "StringLiteralType"
-- !private "UIBarButtonSystemItem"
-- "UIEvent"
-- !private "UIBarButtonItemStyle"
-- !private "BooleanLiteralType"
-- !private "+"
-- "UILabel"
-- !private "UIBarStyle"
-- !private "UIToolbar"
 - "UIViewController"
-- "UITextFieldDelegate"
-- "Bool"
 - "AssignmentPrecedence"
 - !private "=="
-- !private "CGRect"
 - !private "print"
+- !private "UIColor"
+- "ViewController"
+- "Bool"
+- !private "UIToolbar"
+- "UITextFieldDelegate"
+- "UILabel"
+- "UIStoryboardSegue"
+- !private "UIBarButtonItemStyle"
+- !private "BooleanLiteralType"
+- !private "CGRect"
+- !private "UIBarStyle"
+- "UITextField"
+- !private "UIBarButtonSystemItem"
+- !private "StringLiteralType"
+- "Set"
+- "UITouch"
+- !private "UIBarButtonItem"
+- !private "!="
+- "UIEvent"
 depends-member:
 - !private ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
 - !private ["Ps9AnyObject", "UIBarButtonItemStyle"]
 - !private ["Ps9AnyObject", "UIBarButtonSystemItem"]
 - !private ["Ps9AnyObject", "UIBarStyle"]
+- !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIToolbar"]
 - !private ["Ps9AnyObject", "ViewController"]
 - ["Ps9AnyObject", "addDoneButtonOnKeyboard"]
+- !private ["Ps9AnyObject", "backgroundColor"]
 - !private ["Ps9AnyObject", "barStyle"]
 - !private ["Ps9AnyObject", "delegate"]
 - ["Ps9AnyObject", "doneButtonAction"]
 - ["Ps9AnyObject", "eleventhGradeLabel"]
+- !private ["Ps9AnyObject", "identifier"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "inputAccessoryView"]
 - !private ["Ps9AnyObject", "items"]
 - ["Ps9AnyObject", "lpgTextField"]
-- ["Ps9AnyObject", "ninthGradeEdit"]
 - ["Ps9AnyObject", "ninthGradeLabel"]
+- ["Ps9AnyObject", "prepare"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "resignFirstResponder"]
 - ["Ps9AnyObject", "schoolTextField"]
@@ -78,6 +81,7 @@ depends-member:
 - ["Ps9AnyObject", "textFieldShouldReturn"]
 - ["Ps9AnyObject", "touchesBegan"]
 - ["Ps9AnyObject", "twelfthGradeLabel"]
+- !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Iterator"]
@@ -95,6 +99,7 @@ depends-member:
 - !private ["Ps22BidirectionalIndexable", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
+- !private ["PSo15CALayerDelegate", "backgroundColor"]
 - !private ["PSo15CALayerDelegate", "barStyle"]
 - !private ["PSo15CALayerDelegate", "delegate"]
 - !private ["PSo15CALayerDelegate", "init"]
@@ -104,6 +109,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "sizeToFit"]
 - !private ["PSo15CALayerDelegate", "tag"]
 - !private ["PSo15CALayerDelegate", "text"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
 - ["VSC6CGRect", "deinit"]
 - !private ["VSC6CGRect", "init"]
 - !private ["Ps7CVarArg", "CGRect"]
@@ -112,22 +118,25 @@ depends-member:
 - !private ["Ps7CVarArg", "UIBarButtonItemStyle"]
 - !private ["Ps7CVarArg", "UIBarButtonSystemItem"]
 - !private ["Ps7CVarArg", "UIBarStyle"]
+- !private ["Ps7CVarArg", "UIColor"]
 - !private ["Ps7CVarArg", "UIToolbar"]
 - !private ["Ps7CVarArg", "ViewController"]
 - !private ["Ps7CVarArg", "_Element"]
 - ["Ps7CVarArg", "addDoneButtonOnKeyboard"]
 - !private ["Ps7CVarArg", "append"]
+- !private ["Ps7CVarArg", "backgroundColor"]
 - !private ["Ps7CVarArg", "barStyle"]
 - !private ["Ps7CVarArg", "delegate"]
 - ["Ps7CVarArg", "doneButtonAction"]
 - ["Ps7CVarArg", "eleventhGradeLabel"]
 - !private ["Ps7CVarArg", "first"]
+- !private ["Ps7CVarArg", "identifier"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "inputAccessoryView"]
 - !private ["Ps7CVarArg", "items"]
 - ["Ps7CVarArg", "lpgTextField"]
-- ["Ps7CVarArg", "ninthGradeEdit"]
 - ["Ps7CVarArg", "ninthGradeLabel"]
+- ["Ps7CVarArg", "prepare"]
 - !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "resignFirstResponder"]
 - ["Ps7CVarArg", "schoolTextField"]
@@ -144,6 +153,7 @@ depends-member:
 - ["Ps7CVarArg", "textFieldShouldReturn"]
 - ["Ps7CVarArg", "touchesBegan"]
 - ["Ps7CVarArg", "twelfthGradeLabel"]
+- !private ["Ps7CVarArg", "view"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", ""]
 - !private ["Ps10Collection", "Iterator"]
@@ -158,22 +168,25 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIBarButtonItemStyle"]
 - !private ["Ps28CustomDebugStringConvertible", "UIBarButtonSystemItem"]
 - !private ["Ps28CustomDebugStringConvertible", "UIBarStyle"]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIToolbar"]
 - !private ["Ps28CustomDebugStringConvertible", "ViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - ["Ps28CustomDebugStringConvertible", "addDoneButtonOnKeyboard"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - !private ["Ps28CustomDebugStringConvertible", "barStyle"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - ["Ps28CustomDebugStringConvertible", "doneButtonAction"]
 - ["Ps28CustomDebugStringConvertible", "eleventhGradeLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "first"]
+- !private ["Ps28CustomDebugStringConvertible", "identifier"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "inputAccessoryView"]
 - !private ["Ps28CustomDebugStringConvertible", "items"]
 - ["Ps28CustomDebugStringConvertible", "lpgTextField"]
-- ["Ps28CustomDebugStringConvertible", "ninthGradeEdit"]
 - ["Ps28CustomDebugStringConvertible", "ninthGradeLabel"]
+- ["Ps28CustomDebugStringConvertible", "prepare"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "resignFirstResponder"]
 - ["Ps28CustomDebugStringConvertible", "schoolTextField"]
@@ -190,6 +203,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "textFieldShouldReturn"]
 - ["Ps28CustomDebugStringConvertible", "touchesBegan"]
 - ["Ps28CustomDebugStringConvertible", "twelfthGradeLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "view"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
@@ -207,23 +221,26 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIBarButtonItemStyle"]
 - !private ["Ps23CustomStringConvertible", "UIBarButtonSystemItem"]
 - !private ["Ps23CustomStringConvertible", "UIBarStyle"]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIToolbar"]
 - !private ["Ps23CustomStringConvertible", "ViewController"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - ["Ps23CustomStringConvertible", "addDoneButtonOnKeyboard"]
 - !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - !private ["Ps23CustomStringConvertible", "barStyle"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
 - ["Ps23CustomStringConvertible", "doneButtonAction"]
 - ["Ps23CustomStringConvertible", "eleventhGradeLabel"]
 - !private ["Ps23CustomStringConvertible", "first"]
+- !private ["Ps23CustomStringConvertible", "identifier"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "inputAccessoryView"]
 - !private ["Ps23CustomStringConvertible", "items"]
 - ["Ps23CustomStringConvertible", "lpgTextField"]
-- ["Ps23CustomStringConvertible", "ninthGradeEdit"]
 - ["Ps23CustomStringConvertible", "ninthGradeLabel"]
+- ["Ps23CustomStringConvertible", "prepare"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "resignFirstResponder"]
 - ["Ps23CustomStringConvertible", "schoolTextField"]
@@ -240,6 +257,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "textFieldShouldReturn"]
 - ["Ps23CustomStringConvertible", "touchesBegan"]
 - ["Ps23CustomStringConvertible", "twelfthGradeLabel"]
+- !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "CGRect"]
@@ -248,10 +266,12 @@ depends-member:
 - !private ["Ps9Equatable", "UIBarButtonItemStyle"]
 - !private ["Ps9Equatable", "UIBarButtonSystemItem"]
 - !private ["Ps9Equatable", "UIBarStyle"]
+- !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UIToolbar"]
 - !private ["Ps9Equatable", "ViewController"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "addDoneButtonOnKeyboard"]
+- !private ["Ps9Equatable", "backgroundColor"]
 - !private ["Ps9Equatable", "barStyle"]
 - !private ["Ps9Equatable", "default"]
 - !private ["Ps9Equatable", "delegate"]
@@ -260,12 +280,13 @@ depends-member:
 - ["Ps9Equatable", "eleventhGradeLabel"]
 - !private ["Ps9Equatable", "first"]
 - !private ["Ps9Equatable", "flexibleSpace"]
+- !private ["Ps9Equatable", "identifier"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "inputAccessoryView"]
 - !private ["Ps9Equatable", "items"]
 - ["Ps9Equatable", "lpgTextField"]
-- ["Ps9Equatable", "ninthGradeEdit"]
 - ["Ps9Equatable", "ninthGradeLabel"]
+- ["Ps9Equatable", "prepare"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "resignFirstResponder"]
 - ["Ps9Equatable", "schoolTextField"]
@@ -282,6 +303,7 @@ depends-member:
 - ["Ps9Equatable", "textFieldShouldReturn"]
 - ["Ps9Equatable", "touchesBegan"]
 - ["Ps9Equatable", "twelfthGradeLabel"]
+- !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
 - !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
@@ -300,10 +322,12 @@ depends-member:
 - !private ["Ps8Hashable", "UIBarButtonItemStyle"]
 - !private ["Ps8Hashable", "UIBarButtonSystemItem"]
 - !private ["Ps8Hashable", "UIBarStyle"]
+- !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIToolbar"]
 - !private ["Ps8Hashable", "ViewController"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "addDoneButtonOnKeyboard"]
+- !private ["Ps8Hashable", "backgroundColor"]
 - !private ["Ps8Hashable", "barStyle"]
 - !private ["Ps8Hashable", "default"]
 - !private ["Ps8Hashable", "delegate"]
@@ -312,12 +336,13 @@ depends-member:
 - ["Ps8Hashable", "eleventhGradeLabel"]
 - !private ["Ps8Hashable", "first"]
 - !private ["Ps8Hashable", "flexibleSpace"]
+- !private ["Ps8Hashable", "identifier"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "inputAccessoryView"]
 - !private ["Ps8Hashable", "items"]
 - ["Ps8Hashable", "lpgTextField"]
-- ["Ps8Hashable", "ninthGradeEdit"]
 - ["Ps8Hashable", "ninthGradeLabel"]
+- ["Ps8Hashable", "prepare"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "resignFirstResponder"]
 - ["Ps8Hashable", "schoolTextField"]
@@ -334,6 +359,7 @@ depends-member:
 - ["Ps8Hashable", "textFieldShouldReturn"]
 - ["Ps8Hashable", "touchesBegan"]
 - ["Ps8Hashable", "twelfthGradeLabel"]
+- !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
@@ -367,9 +393,11 @@ depends-member:
 - !private ["PSo8NSCoding", "UIBarButtonItemStyle"]
 - !private ["PSo8NSCoding", "UIBarButtonSystemItem"]
 - !private ["PSo8NSCoding", "UIBarStyle"]
+- !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIToolbar"]
 - !private ["PSo8NSCoding", "ViewController"]
 - ["PSo8NSCoding", "addDoneButtonOnKeyboard"]
+- !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "barStyle"]
 - !private ["PSo8NSCoding", "delegate"]
 - ["PSo8NSCoding", "doneButtonAction"]
@@ -378,8 +406,8 @@ depends-member:
 - !private ["PSo8NSCoding", "inputAccessoryView"]
 - !private ["PSo8NSCoding", "items"]
 - ["PSo8NSCoding", "lpgTextField"]
-- ["PSo8NSCoding", "ninthGradeEdit"]
 - ["PSo8NSCoding", "ninthGradeLabel"]
+- ["PSo8NSCoding", "prepare"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "resignFirstResponder"]
 - ["PSo8NSCoding", "schoolTextField"]
@@ -396,6 +424,7 @@ depends-member:
 - ["PSo8NSCoding", "textFieldShouldReturn"]
 - ["PSo8NSCoding", "touchesBegan"]
 - ["PSo8NSCoding", "twelfthGradeLabel"]
+- !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
@@ -404,6 +433,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIBarButtonItemStyle"]
 - !private ["PSo26NSExtensionRequestHandling", "UIBarButtonSystemItem"]
 - !private ["PSo26NSExtensionRequestHandling", "UIBarStyle"]
+- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIToolbar"]
 - !private ["PSo26NSExtensionRequestHandling", "ViewController"]
 - ["PSo26NSExtensionRequestHandling", "addDoneButtonOnKeyboard"]
@@ -411,8 +441,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "eleventhGradeLabel"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "lpgTextField"]
-- ["PSo26NSExtensionRequestHandling", "ninthGradeEdit"]
 - ["PSo26NSExtensionRequestHandling", "ninthGradeLabel"]
+- ["PSo26NSExtensionRequestHandling", "prepare"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "schoolTextField"]
 - ["PSo26NSExtensionRequestHandling", "tenthGradeLabel"]
@@ -425,6 +455,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "textFieldShouldReturn"]
 - ["PSo26NSExtensionRequestHandling", "touchesBegan"]
 - ["PSo26NSExtensionRequestHandling", "twelfthGradeLabel"]
+- !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "init"]
@@ -435,24 +466,27 @@ depends-member:
 - !private ["CSo8NSObject", "UIBarButtonItemStyle"]
 - !private ["CSo8NSObject", "UIBarButtonSystemItem"]
 - !private ["CSo8NSObject", "UIBarStyle"]
+- !private ["CSo8NSObject", "UIColor"]
 - ["CSo8NSObject", "UIEvent"]
 - ["CSo8NSObject", "UILabel"]
-- ["CSo8NSObject", "UITapGestureRecognizer"]
+- ["CSo8NSObject", "UIStoryboardSegue"]
 - ["CSo8NSObject", "UITextField"]
 - !private ["CSo8NSObject", "UIToolbar"]
 - ["CSo8NSObject", "UITouch"]
 - !private ["CSo8NSObject", "ViewController"]
 - ["CSo8NSObject", "addDoneButtonOnKeyboard"]
+- !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "barStyle"]
 - !private ["CSo8NSObject", "delegate"]
 - ["CSo8NSObject", "doneButtonAction"]
 - ["CSo8NSObject", "eleventhGradeLabel"]
+- !private ["CSo8NSObject", "identifier"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "inputAccessoryView"]
 - !private ["CSo8NSObject", "items"]
 - ["CSo8NSObject", "lpgTextField"]
-- ["CSo8NSObject", "ninthGradeEdit"]
 - ["CSo8NSObject", "ninthGradeLabel"]
+- ["CSo8NSObject", "prepare"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "resignFirstResponder"]
 - ["CSo8NSObject", "schoolTextField"]
@@ -469,25 +503,29 @@ depends-member:
 - ["CSo8NSObject", "textFieldShouldReturn"]
 - ["CSo8NSObject", "touchesBegan"]
 - ["CSo8NSObject", "twelfthGradeLabel"]
+- !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "CGRect"]
 - !private ["PSo16NSObjectProtocol", "UIBarButtonItem"]
 - !private ["PSo16NSObjectProtocol", "UIBarButtonItemStyle"]
 - !private ["PSo16NSObjectProtocol", "UIBarButtonSystemItem"]
 - !private ["PSo16NSObjectProtocol", "UIBarStyle"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIToolbar"]
 - !private ["PSo16NSObjectProtocol", "ViewController"]
 - ["PSo16NSObjectProtocol", "addDoneButtonOnKeyboard"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "barStyle"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - ["PSo16NSObjectProtocol", "doneButtonAction"]
 - ["PSo16NSObjectProtocol", "eleventhGradeLabel"]
+- !private ["PSo16NSObjectProtocol", "identifier"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "inputAccessoryView"]
 - !private ["PSo16NSObjectProtocol", "items"]
 - ["PSo16NSObjectProtocol", "lpgTextField"]
-- ["PSo16NSObjectProtocol", "ninthGradeEdit"]
 - ["PSo16NSObjectProtocol", "ninthGradeLabel"]
+- ["PSo16NSObjectProtocol", "prepare"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "resignFirstResponder"]
 - ["PSo16NSObjectProtocol", "schoolTextField"]
@@ -504,6 +542,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "textFieldShouldReturn"]
 - ["PSo16NSObjectProtocol", "touchesBegan"]
 - ["PSo16NSObjectProtocol", "twelfthGradeLabel"]
+- !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
@@ -545,6 +584,7 @@ depends-member:
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "barStyle"]
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
@@ -554,6 +594,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "sizeToFit"]
 - !private ["PSo29UIAccessibilityIdentification", "tag"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "barStyle"]
 - !private ["PSo12UIAppearance", "delegate"]
 - !private ["PSo12UIAppearance", "init"]
@@ -568,9 +609,11 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIBarButtonItemStyle"]
 - !private ["PSo21UIAppearanceContainer", "UIBarButtonSystemItem"]
 - !private ["PSo21UIAppearanceContainer", "UIBarStyle"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIToolbar"]
 - !private ["PSo21UIAppearanceContainer", "ViewController"]
 - ["PSo21UIAppearanceContainer", "addDoneButtonOnKeyboard"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - !private ["PSo21UIAppearanceContainer", "barStyle"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - ["PSo21UIAppearanceContainer", "doneButtonAction"]
@@ -579,8 +622,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "inputAccessoryView"]
 - !private ["PSo21UIAppearanceContainer", "items"]
 - ["PSo21UIAppearanceContainer", "lpgTextField"]
-- ["PSo21UIAppearanceContainer", "ninthGradeEdit"]
 - ["PSo21UIAppearanceContainer", "ninthGradeLabel"]
+- ["PSo21UIAppearanceContainer", "prepare"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "resignFirstResponder"]
 - ["PSo21UIAppearanceContainer", "schoolTextField"]
@@ -597,6 +640,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "textFieldShouldReturn"]
 - ["PSo21UIAppearanceContainer", "touchesBegan"]
 - ["PSo21UIAppearanceContainer", "twelfthGradeLabel"]
+- !private ["PSo21UIAppearanceContainer", "view"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - ["CSo15UIBarButtonItem", "deinit"]
@@ -612,11 +656,14 @@ depends-member:
 - !private ["PSo16UIBarPositioning", "sizeToFit"]
 - !private ["OSC10UIBarStyle", "default"]
 - ["OSC10UIBarStyle", "deinit"]
+- ["CSo7UIColor", "deinit"]
+- !private ["CSo7UIColor", "init"]
 - !private ["PSo18UIContentContainer", "CGRect"]
 - !private ["PSo18UIContentContainer", "UIBarButtonItem"]
 - !private ["PSo18UIContentContainer", "UIBarButtonItemStyle"]
 - !private ["PSo18UIContentContainer", "UIBarButtonSystemItem"]
 - !private ["PSo18UIContentContainer", "UIBarStyle"]
+- !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIToolbar"]
 - !private ["PSo18UIContentContainer", "ViewController"]
 - ["PSo18UIContentContainer", "addDoneButtonOnKeyboard"]
@@ -624,8 +671,8 @@ depends-member:
 - ["PSo18UIContentContainer", "eleventhGradeLabel"]
 - !private ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "lpgTextField"]
-- ["PSo18UIContentContainer", "ninthGradeEdit"]
 - ["PSo18UIContentContainer", "ninthGradeLabel"]
+- ["PSo18UIContentContainer", "prepare"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "schoolTextField"]
 - ["PSo18UIContentContainer", "tenthGradeLabel"]
@@ -638,6 +685,7 @@ depends-member:
 - ["PSo18UIContentContainer", "textFieldShouldReturn"]
 - ["PSo18UIContentContainer", "touchesBegan"]
 - ["PSo18UIContentContainer", "twelfthGradeLabel"]
+- !private ["PSo18UIContentContainer", "view"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "delegate"]
@@ -650,6 +698,7 @@ depends-member:
 - !private ["CSo9UIControl", "resignFirstResponder"]
 - !private ["CSo9UIControl", "tag"]
 - !private ["CSo9UIControl", "text"]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "barStyle"]
 - !private ["PSo17UICoordinateSpace", "delegate"]
 - !private ["PSo17UICoordinateSpace", "init"]
@@ -659,6 +708,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "sizeToFit"]
 - !private ["PSo17UICoordinateSpace", "tag"]
 - !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "barStyle"]
 - !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "init"]
@@ -673,9 +723,11 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIBarButtonItemStyle"]
 - !private ["PSo18UIFocusEnvironment", "UIBarButtonSystemItem"]
 - !private ["PSo18UIFocusEnvironment", "UIBarStyle"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIToolbar"]
 - !private ["PSo18UIFocusEnvironment", "ViewController"]
 - ["PSo18UIFocusEnvironment", "addDoneButtonOnKeyboard"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - !private ["PSo18UIFocusEnvironment", "barStyle"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
 - ["PSo18UIFocusEnvironment", "doneButtonAction"]
@@ -684,8 +736,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "inputAccessoryView"]
 - !private ["PSo18UIFocusEnvironment", "items"]
 - ["PSo18UIFocusEnvironment", "lpgTextField"]
-- ["PSo18UIFocusEnvironment", "ninthGradeEdit"]
 - ["PSo18UIFocusEnvironment", "ninthGradeLabel"]
+- ["PSo18UIFocusEnvironment", "prepare"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "resignFirstResponder"]
 - ["PSo18UIFocusEnvironment", "schoolTextField"]
@@ -702,8 +754,10 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "textFieldShouldReturn"]
 - ["PSo18UIFocusEnvironment", "touchesBegan"]
 - ["PSo18UIFocusEnvironment", "twelfthGradeLabel"]
+- !private ["PSo18UIFocusEnvironment", "view"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "backgroundColor"]
 - !private ["PSo11UIFocusItem", "barStyle"]
 - !private ["PSo11UIFocusItem", "delegate"]
 - !private ["PSo11UIFocusItem", "init"]
@@ -718,7 +772,6 @@ depends-member:
 - !private ["PSo10UIKeyInput", "resignFirstResponder"]
 - !private ["PSo10UIKeyInput", "tag"]
 - !private ["PSo10UIKeyInput", "text"]
-- !private ["CSo7UILabel", "text"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "CGRect"]
 - ["CSo11UIResponder", "Set"]
@@ -726,14 +779,16 @@ depends-member:
 - !private ["CSo11UIResponder", "UIBarButtonItemStyle"]
 - !private ["CSo11UIResponder", "UIBarButtonSystemItem"]
 - !private ["CSo11UIResponder", "UIBarStyle"]
+- !private ["CSo11UIResponder", "UIColor"]
 - ["CSo11UIResponder", "UIEvent"]
 - ["CSo11UIResponder", "UILabel"]
-- ["CSo11UIResponder", "UITapGestureRecognizer"]
+- ["CSo11UIResponder", "UIStoryboardSegue"]
 - ["CSo11UIResponder", "UITextField"]
 - !private ["CSo11UIResponder", "UIToolbar"]
 - ["CSo11UIResponder", "UITouch"]
 - !private ["CSo11UIResponder", "ViewController"]
 - ["CSo11UIResponder", "addDoneButtonOnKeyboard"]
+- !private ["CSo11UIResponder", "backgroundColor"]
 - !private ["CSo11UIResponder", "barStyle"]
 - !private ["CSo11UIResponder", "delegate"]
 - ["CSo11UIResponder", "doneButtonAction"]
@@ -742,8 +797,8 @@ depends-member:
 - !private ["CSo11UIResponder", "inputAccessoryView"]
 - !private ["CSo11UIResponder", "items"]
 - ["CSo11UIResponder", "lpgTextField"]
-- ["CSo11UIResponder", "ninthGradeEdit"]
 - ["CSo11UIResponder", "ninthGradeLabel"]
+- ["CSo11UIResponder", "prepare"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "resignFirstResponder"]
 - ["CSo11UIResponder", "schoolTextField"]
@@ -760,15 +815,18 @@ depends-member:
 - ["CSo11UIResponder", "textFieldShouldReturn"]
 - ["CSo11UIResponder", "touchesBegan"]
 - ["CSo11UIResponder", "twelfthGradeLabel"]
+- !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo30UIResponderStandardEditActions", "CGRect"]
 - !private ["PSo30UIResponderStandardEditActions", "UIBarButtonItem"]
 - !private ["PSo30UIResponderStandardEditActions", "UIBarButtonItemStyle"]
 - !private ["PSo30UIResponderStandardEditActions", "UIBarButtonSystemItem"]
 - !private ["PSo30UIResponderStandardEditActions", "UIBarStyle"]
+- !private ["PSo30UIResponderStandardEditActions", "UIColor"]
 - !private ["PSo30UIResponderStandardEditActions", "UIToolbar"]
 - !private ["PSo30UIResponderStandardEditActions", "ViewController"]
 - ["PSo30UIResponderStandardEditActions", "addDoneButtonOnKeyboard"]
+- !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
 - !private ["PSo30UIResponderStandardEditActions", "barStyle"]
 - !private ["PSo30UIResponderStandardEditActions", "delegate"]
 - ["PSo30UIResponderStandardEditActions", "doneButtonAction"]
@@ -777,8 +835,8 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "inputAccessoryView"]
 - !private ["PSo30UIResponderStandardEditActions", "items"]
 - ["PSo30UIResponderStandardEditActions", "lpgTextField"]
-- ["PSo30UIResponderStandardEditActions", "ninthGradeEdit"]
 - ["PSo30UIResponderStandardEditActions", "ninthGradeLabel"]
+- ["PSo30UIResponderStandardEditActions", "prepare"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - !private ["PSo30UIResponderStandardEditActions", "resignFirstResponder"]
 - ["PSo30UIResponderStandardEditActions", "schoolTextField"]
@@ -795,6 +853,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "textFieldShouldReturn"]
 - ["PSo30UIResponderStandardEditActions", "touchesBegan"]
 - ["PSo30UIResponderStandardEditActions", "twelfthGradeLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "view"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "CGRect"]
@@ -802,6 +861,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIBarButtonItemStyle"]
 - !private ["PSo16UIStateRestoring", "UIBarButtonSystemItem"]
 - !private ["PSo16UIStateRestoring", "UIBarStyle"]
+- !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIToolbar"]
 - !private ["PSo16UIStateRestoring", "ViewController"]
 - ["PSo16UIStateRestoring", "addDoneButtonOnKeyboard"]
@@ -809,8 +869,8 @@ depends-member:
 - ["PSo16UIStateRestoring", "eleventhGradeLabel"]
 - !private ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "lpgTextField"]
-- ["PSo16UIStateRestoring", "ninthGradeEdit"]
 - ["PSo16UIStateRestoring", "ninthGradeLabel"]
+- ["PSo16UIStateRestoring", "prepare"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "schoolTextField"]
 - ["PSo16UIStateRestoring", "tenthGradeLabel"]
@@ -823,8 +883,11 @@ depends-member:
 - ["PSo16UIStateRestoring", "textFieldShouldReturn"]
 - ["PSo16UIStateRestoring", "touchesBegan"]
 - ["PSo16UIStateRestoring", "twelfthGradeLabel"]
+- !private ["PSo16UIStateRestoring", "view"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
+- ["CSo17UIStoryboardSegue", "deinit"]
+- !private ["CSo17UIStoryboardSegue", "identifier"]
 - ["CSo11UITextField", "deinit"]
 - !private ["CSo11UITextField", "delegate"]
 - !private ["CSo11UITextField", "inputAccessoryView"]
@@ -836,12 +899,12 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "UIBarButtonItemStyle"]
 - !private ["PSo19UITextFieldDelegate", "UIBarButtonSystemItem"]
 - !private ["PSo19UITextFieldDelegate", "UIBarStyle"]
+- !private ["PSo19UITextFieldDelegate", "UIColor"]
 - !private ["PSo19UITextFieldDelegate", "UIToolbar"]
 - !private ["PSo19UITextFieldDelegate", "ViewController"]
 - !private ["PSo19UITextFieldDelegate", "addDoneButtonOnKeyboard"]
 - !private ["PSo19UITextFieldDelegate", "doneButtonAction"]
 - !private ["PSo19UITextFieldDelegate", "lpgTextField"]
-- !private ["PSo19UITextFieldDelegate", "ninthGradeLabel"]
 - !private ["PSo19UITextFieldDelegate", "print"]
 - !private ["PSo19UITextFieldDelegate", "schoolTextField"]
 - ["PSo19UITextFieldDelegate", "textField"]
@@ -851,6 +914,7 @@ depends-member:
 - ["PSo19UITextFieldDelegate", "textFieldShouldClear"]
 - ["PSo19UITextFieldDelegate", "textFieldShouldEndEditing"]
 - ["PSo19UITextFieldDelegate", "textFieldShouldReturn"]
+- !private ["PSo19UITextFieldDelegate", "view"]
 - ["PSo19UITextFieldDelegate", ""]
 - !private ["PSo11UITextInput", "delegate"]
 - !private ["PSo11UITextInput", "inputAccessoryView"]
@@ -872,9 +936,11 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIBarButtonItemStyle"]
 - !private ["PSo18UITraitEnvironment", "UIBarButtonSystemItem"]
 - !private ["PSo18UITraitEnvironment", "UIBarStyle"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIToolbar"]
 - !private ["PSo18UITraitEnvironment", "ViewController"]
 - ["PSo18UITraitEnvironment", "addDoneButtonOnKeyboard"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - !private ["PSo18UITraitEnvironment", "barStyle"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - ["PSo18UITraitEnvironment", "doneButtonAction"]
@@ -883,8 +949,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "inputAccessoryView"]
 - !private ["PSo18UITraitEnvironment", "items"]
 - ["PSo18UITraitEnvironment", "lpgTextField"]
-- ["PSo18UITraitEnvironment", "ninthGradeEdit"]
 - ["PSo18UITraitEnvironment", "ninthGradeLabel"]
+- ["PSo18UITraitEnvironment", "prepare"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "resignFirstResponder"]
 - ["PSo18UITraitEnvironment", "schoolTextField"]
@@ -901,8 +967,10 @@ depends-member:
 - ["PSo18UITraitEnvironment", "textFieldShouldReturn"]
 - ["PSo18UITraitEnvironment", "touchesBegan"]
 - ["PSo18UITraitEnvironment", "twelfthGradeLabel"]
+- !private ["PSo18UITraitEnvironment", "view"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "backgroundColor"]
 - !private ["CSo6UIView", "barStyle"]
 - !private ["CSo6UIView", "delegate"]
 - !private ["CSo6UIView", "init"]
@@ -919,9 +987,10 @@ depends-member:
 - !private ["CSo16UIViewController", "UIBarButtonItemStyle"]
 - !private ["CSo16UIViewController", "UIBarButtonSystemItem"]
 - !private ["CSo16UIViewController", "UIBarStyle"]
+- !private ["CSo16UIViewController", "UIColor"]
 - ["CSo16UIViewController", "UIEvent"]
 - ["CSo16UIViewController", "UILabel"]
-- ["CSo16UIViewController", "UITapGestureRecognizer"]
+- ["CSo16UIViewController", "UIStoryboardSegue"]
 - ["CSo16UIViewController", "UITextField"]
 - !private ["CSo16UIViewController", "UIToolbar"]
 - ["CSo16UIViewController", "UITouch"]
@@ -932,8 +1001,8 @@ depends-member:
 - ["CSo16UIViewController", "eleventhGradeLabel"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "lpgTextField"]
-- ["CSo16UIViewController", "ninthGradeEdit"]
 - ["CSo16UIViewController", "ninthGradeLabel"]
+- ["CSo16UIViewController", "prepare"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "schoolTextField"]
 - ["CSo16UIViewController", "tenthGradeLabel"]
@@ -946,6 +1015,7 @@ depends-member:
 - ["CSo16UIViewController", "textFieldShouldReturn"]
 - ["CSo16UIViewController", "touchesBegan"]
 - ["CSo16UIViewController", "twelfthGradeLabel"]
+- !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
 - ["C9GPAerFood14ViewController", "Bool"]
@@ -955,9 +1025,10 @@ depends-member:
 - !private ["C9GPAerFood14ViewController", "UIBarButtonItemStyle"]
 - !private ["C9GPAerFood14ViewController", "UIBarButtonSystemItem"]
 - !private ["C9GPAerFood14ViewController", "UIBarStyle"]
+- !private ["C9GPAerFood14ViewController", "UIColor"]
 - ["C9GPAerFood14ViewController", "UIEvent"]
 - ["C9GPAerFood14ViewController", "UILabel"]
-- ["C9GPAerFood14ViewController", "UITapGestureRecognizer"]
+- ["C9GPAerFood14ViewController", "UIStoryboardSegue"]
 - ["C9GPAerFood14ViewController", "UITextField"]
 - !private ["C9GPAerFood14ViewController", "UIToolbar"]
 - ["C9GPAerFood14ViewController", "UITouch"]
@@ -968,8 +1039,8 @@ depends-member:
 - ["C9GPAerFood14ViewController", "eleventhGradeLabel"]
 - ["C9GPAerFood14ViewController", "init"]
 - ["C9GPAerFood14ViewController", "lpgTextField"]
-- ["C9GPAerFood14ViewController", "ninthGradeEdit"]
 - ["C9GPAerFood14ViewController", "ninthGradeLabel"]
+- ["C9GPAerFood14ViewController", "prepare"]
 - !private ["C9GPAerFood14ViewController", "print"]
 - ["C9GPAerFood14ViewController", "schoolTextField"]
 - ["C9GPAerFood14ViewController", "tenthGradeLabel"]
@@ -982,11 +1053,13 @@ depends-member:
 - ["C9GPAerFood14ViewController", "textFieldShouldReturn"]
 - ["C9GPAerFood14ViewController", "touchesBegan"]
 - ["C9GPAerFood14ViewController", "twelfthGradeLabel"]
+- !private ["C9GPAerFood14ViewController", "view"]
 - ["C9GPAerFood14ViewController", "viewDidLoad"]
 - !private ["Ps14_ArrayProtocol", "Iterator"]
 - !private ["Ps14_ArrayProtocol", "_Element"]
 - !private ["Ps14_ArrayProtocol", "append"]
 - !private ["Ps14_ArrayProtocol", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "barStyle"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "delegate"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
@@ -1005,6 +1078,7 @@ depends-member:
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps26_ExpressibleByColorLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "CGRect"]
 - !private ["Ps9_Hashable", "Iterator"]
@@ -1012,10 +1086,12 @@ depends-member:
 - !private ["Ps9_Hashable", "UIBarButtonItemStyle"]
 - !private ["Ps9_Hashable", "UIBarButtonSystemItem"]
 - !private ["Ps9_Hashable", "UIBarStyle"]
+- !private ["Ps9_Hashable", "UIColor"]
 - !private ["Ps9_Hashable", "UIToolbar"]
 - !private ["Ps9_Hashable", "ViewController"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - ["Ps9_Hashable", "addDoneButtonOnKeyboard"]
+- !private ["Ps9_Hashable", "backgroundColor"]
 - !private ["Ps9_Hashable", "barStyle"]
 - !private ["Ps9_Hashable", "default"]
 - !private ["Ps9_Hashable", "delegate"]
@@ -1024,12 +1100,13 @@ depends-member:
 - ["Ps9_Hashable", "eleventhGradeLabel"]
 - !private ["Ps9_Hashable", "first"]
 - !private ["Ps9_Hashable", "flexibleSpace"]
+- !private ["Ps9_Hashable", "identifier"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "inputAccessoryView"]
 - !private ["Ps9_Hashable", "items"]
 - ["Ps9_Hashable", "lpgTextField"]
-- ["Ps9_Hashable", "ninthGradeEdit"]
 - ["Ps9_Hashable", "ninthGradeLabel"]
+- ["Ps9_Hashable", "prepare"]
 - !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "resignFirstResponder"]
 - ["Ps9_Hashable", "schoolTextField"]
@@ -1046,6 +1123,7 @@ depends-member:
 - ["Ps9_Hashable", "textFieldShouldReturn"]
 - ["Ps9_Hashable", "touchesBegan"]
 - ["Ps9_Hashable", "twelfthGradeLabel"]
+- !private ["Ps9_Hashable", "view"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
@@ -1062,6 +1140,7 @@ depends-nominal:
 - !private "Ps22BidirectionalIndexable"
 - "Sb"
 - !private "PSo15CALayerDelegate"
+- "V12CoreGraphics7CGFloat"
 - "VSC6CGRect"
 - "Ps7CVarArg"
 - !private "Ps10Collection"
@@ -1120,6 +1199,7 @@ depends-nominal:
 - !private "CSo9UIBarItem"
 - !private "PSo16UIBarPositioning"
 - "OSC10UIBarStyle"
+- "CSo7UIColor"
 - "PSo18UIContentContainer"
 - !private "PSo30UIContentSizeCategoryAdjusting"
 - !private "CSo9UIControl"
@@ -1128,10 +1208,10 @@ depends-nominal:
 - "PSo18UIFocusEnvironment"
 - !private "PSo11UIFocusItem"
 - !private "PSo10UIKeyInput"
-- !private "CSo7UILabel"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "PSo16UIStateRestoring"
+- "CSo17UIStoryboardSegue"
 - "CSo11UITextField"
 - "PSo19UITextFieldDelegate"
 - !private "PSo11UITextInput"
@@ -1149,6 +1229,7 @@ depends-nominal:
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps26_ExpressibleByColorLiteral"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
@@ -1165,4 +1246,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "8bd2adc2d0c563a03cf0a9981e1a6f75"
+interface-hash: "868eb623160feaff09f8c319a5f9ffcb"

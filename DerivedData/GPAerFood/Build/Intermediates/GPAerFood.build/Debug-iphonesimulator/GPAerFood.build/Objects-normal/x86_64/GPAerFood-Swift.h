@@ -191,7 +191,7 @@ SWIFT_CLASS("_TtC9GPAerFood24GradeTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITapGestureRecognizer;
+@class UIStoryboardSegue;
 @class UILabel;
 
 SWIFT_CLASS("_TtC9GPAerFood14ViewController")
@@ -207,8 +207,8 @@ SWIFT_CLASS("_TtC9GPAerFood14ViewController")
 - (void)doneButtonAction;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
 - (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
-- (IBAction)ninthGradeEditWithSender:(UITapGestureRecognizer * _Nonnull)sender;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

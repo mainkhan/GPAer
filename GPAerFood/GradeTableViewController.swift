@@ -26,6 +26,20 @@ class GradeTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        // Lighter blue 80, 90.6, 95.7
+        self.view.backgroundColor = UIColor(red: 0.8, green: 0.906, blue: 0.957, alpha: 1)
+        
+        // Shiny Blue 4.7, 69, 100
+        self.view.backgroundColor = UIColor(red: 0.047, green: 0.69, blue: 1, alpha: 1)
+
+        // Light Orange 100, 88.6, 75.3
+//        self.view.backgroundColor = UIColor(red: 1, green: 0.886, blue: 0.753, alpha: 1)
+        
+        // Shiny Orange (trash) 100, 53.7, 0
+//        self.view.backgroundColor = UIColor(red: 1, green: 0.537, blue: 0, alpha: 1)
+
+        
     }
     
     @IBAction func addGrade(_ sender: UIBarButtonItem) {

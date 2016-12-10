@@ -40,7 +40,7 @@
 		6C20ADB41DF07D46007DC525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C20ADB61DF07D46007DC525 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C20ADB91DF07D46007DC525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6C20ADBB1DF07D46007DC525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C20ADBB1DF07D46007DC525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = GPAerFood/Info.plist; sourceTree = "<group>"; };
 		6C20ADC01DF07D46007DC525 /* GPAerFoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPAerFoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C20ADC41DF07D46007DC525 /* GPAerFoodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPAerFoodTests.swift; sourceTree = "<group>"; };
 		6C20ADC61DF07D46007DC525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +73,7 @@
 			children = (
 				6C20ADAE1DF07D46007DC525 /* GPAerFood */,
 				6C20ADC31DF07D46007DC525 /* GPAerFoodTests */,
+				6C20ADBB1DF07D46007DC525 /* Info.plist */,
 				6C20ADAD1DF07D46007DC525 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,7 +99,6 @@
 				6C20ADDA1DF4DE0A007DC525 /* GradeTableViewController.swift */,
 				6C20ADB61DF07D46007DC525 /* Assets.xcassets */,
 				6C20ADB81DF07D46007DC525 /* LaunchScreen.storyboard */,
-				6C20ADBB1DF07D46007DC525 /* Info.plist */,
 			);
 			path = GPAerFood;
 			sourceTree = "<group>";
@@ -434,6 +434,7 @@
 				6C20ADCB1DF07D46007DC525 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C20ADCC1DF07D46007DC525 /* Build configuration list for PBXNativeTarget "GPAerFoodTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +443,7 @@
 				6C20ADCE1DF07D46007DC525 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
