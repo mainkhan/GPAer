@@ -149,11 +149,35 @@ SWIFT_CLASS("_TtC9GPAerFood5Grade")
 - (float)getWeightedGrade;
 @end
 
+@class Year;
+@class UIBarButtonItem;
+@class UITableView;
+@class UITableViewCell;
+@class UINavigationItem;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC9GPAerFood26Grade10TableViewController")
+@interface Grade10TableViewController : UITableViewController
+@property (nonatomic, strong) Year * _Nonnull year;
+@property (nonatomic, weak) IBOutlet UINavigationItem * _Null_unspecified navigationBar;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified addButton;
+- (void)viewDidLoad;
+- (IBAction)addGrade:(UIBarButtonItem * _Nonnull)sender;
+- (void)loadSampleYear;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UITouch;
 @class UIEvent;
 @class UITextField;
 @class UISegmentedControl;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC9GPAerFood18GradeTableViewCell")
 @interface GradeTableViewCell : UITableViewCell
@@ -170,11 +194,6 @@ SWIFT_CLASS("_TtC9GPAerFood18GradeTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class Year;
-@class UIBarButtonItem;
-@class UITableView;
-@class UINavigationItem;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC9GPAerFood24GradeTableViewController")
 @interface GradeTableViewController : UITableViewController
@@ -182,7 +201,6 @@ SWIFT_CLASS("_TtC9GPAerFood24GradeTableViewController")
 @property (nonatomic, weak) IBOutlet UINavigationItem * _Null_unspecified navigationBar;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified addButton;
 - (void)viewDidLoad;
-- (void)viewWillAppear:(BOOL)animated;
 - (IBAction)addGrade:(UIBarButtonItem * _Nonnull)sender;
 - (void)loadSampleYear;
 - (void)didReceiveMemoryWarning;

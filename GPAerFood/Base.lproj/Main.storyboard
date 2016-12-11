@@ -130,21 +130,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="cPF-EF-xzq" userLabel="9thGradeRecognizer">
-                    <connections>
-                        <segue destination="Ikv-17-f6X" kind="showDetail" identifier="NinthSegue" action="showViewController:sender:" id="mkD-To-T9a"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <tapGestureRecognizer id="cPF-EF-xzq" userLabel="9thGradeRecognizer"/>
                 <tapGestureRecognizer id="a6J-PV-qbC" userLabel="10thGradeRecognizer">
                     <connections>
-                        <segue destination="Ikv-17-f6X" kind="showDetail" identifier="TenthSegue" id="gDA-RB-rqB"/>
+                        <segue destination="cth-cv-awh" kind="showDetail" id="A5r-6N-K2c"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="mwN-Xh-Gl3" userLabel="11thGradeRecognizer">
-                    <connections>
-                        <segue destination="Ikv-17-f6X" kind="showDetail" identifier="EleventhSegue" id="VOH-Lh-H8b"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <tapGestureRecognizer id="mwN-Xh-Gl3" userLabel="11thGradeRecognizer"/>
                 <tapGestureRecognizer id="Tee-A3-S5k" userLabel="12thGradeRecognizer">
                     <connections>
                         <segue destination="Ikv-17-f6X" kind="showDetail" identifier="TwelfthSegue" action="showViewController:sender:" id="nk6-hq-gmM"/>
@@ -153,10 +145,10 @@
             </objects>
             <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
         </scene>
-        <!--Xth Grade-->
+        <!--12thGrade-->
         <scene sceneID="VbN-yg-ILH">
             <objects>
-                <tableViewController id="Ikv-17-f6X" customClass="GradeTableViewController" customModule="GPAerFood" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Ikv-17-f6X" userLabel="12thGrade" customClass="GradeTableViewController" customModule="GPAerFood" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="k3P-Sa-V6g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -222,14 +214,13 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WkZ-vl-hKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1857" y="123"/>
+            <point key="canvasLocation" x="1057" y="841"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zpe-n8-hQt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NFE-Vh-TOS" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vJm-F8-t2X">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -243,8 +234,218 @@
             </objects>
             <point key="canvasLocation" x="218" y="123"/>
         </scene>
+        <!--10thGrade-->
+        <scene sceneID="6yc-nu-O5b">
+            <objects>
+                <tableViewController id="cth-cv-awh" userLabel="10thGrade" customClass="Grade10TableViewController" customModule="GPAerFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="biK-Dh-rff">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="GradeTableViewCell" rowHeight="90" id="CDJ-gc-yIA" customClass="GradeTableViewCell" customModule="GPAerFood" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CDJ-gc-yIA" id="lYA-Jo-2sM">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RsO-m1-EDj">
+                                            <rect key="frame" x="284" y="31" width="83" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Full"/>
+                                                <segment title="Half"/>
+                                            </segments>
+                                        </segmentedControl>
+                                        <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="nnP-Vp-hAv">
+                                            <rect key="frame" x="107" y="31" width="149" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Reg"/>
+                                                <segment title="Hon"/>
+                                                <segment title="AP"/>
+                                            </segments>
+                                        </segmentedControl>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="eg. 85" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ny0-1W-U5h">
+                                            <rect key="frame" x="39" y="30" width="60" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                        </textField>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="fullHalfControl" destination="RsO-m1-EDj" id="4HY-cm-q7X"/>
+                                    <outlet property="gradeValueField" destination="ny0-1W-U5h" id="o6n-zp-QTy"/>
+                                    <outlet property="weightControl" destination="nnP-Vp-hAv" id="fn8-fY-zC4"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cth-cv-awh" id="ETd-xx-bl8"/>
+                            <outlet property="delegate" destination="cth-cv-awh" id="7YY-1V-azU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Xth Grade" id="hXt-Kl-mY8">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="73r-Vt-ZRh">
+                            <connections>
+                                <action selector="addGrade:" destination="cth-cv-awh" id="mhx-AD-uAE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="addButton" destination="73r-Vt-ZRh" id="9nD-bS-5Uh"/>
+                        <outlet property="navigationBar" destination="hXt-Kl-mY8" id="2Ig-Pw-ine"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O4s-Wu-Qok" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1857" y="-273"/>
+        </scene>
+        <!--9thGrade-->
+        <scene sceneID="W3U-1f-VVq">
+            <objects>
+                <tableViewController id="dD0-Ld-NMV" userLabel="9thGrade" customClass="GradeTableViewController" customModule="GPAerFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="yEu-0f-tcf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="GradeTableViewCell" rowHeight="90" id="tuS-0b-ZCm" customClass="GradeTableViewCell" customModule="GPAerFood" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tuS-0b-ZCm" id="g8G-x8-2zQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pwa-B2-OcB">
+                                            <rect key="frame" x="284" y="31" width="83" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Full"/>
+                                                <segment title="Half"/>
+                                            </segments>
+                                        </segmentedControl>
+                                        <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="EoQ-fK-OaU">
+                                            <rect key="frame" x="107" y="31" width="149" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Reg"/>
+                                                <segment title="Hon"/>
+                                                <segment title="AP"/>
+                                            </segments>
+                                        </segmentedControl>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="eg. 85" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eIA-Em-E4Q">
+                                            <rect key="frame" x="39" y="30" width="60" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                        </textField>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="fullHalfControl" destination="pwa-B2-OcB" id="0EP-2V-hto"/>
+                                    <outlet property="gradeValueField" destination="eIA-Em-E4Q" id="B3x-Fd-Nlz"/>
+                                    <outlet property="weightControl" destination="EoQ-fK-OaU" id="RyA-5k-zdF"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dD0-Ld-NMV" id="06y-OZ-lc5"/>
+                            <outlet property="delegate" destination="dD0-Ld-NMV" id="zQZ-Lt-c7f"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Xth Grade" id="XKP-Ip-eQv">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8my-Bg-MxW">
+                            <connections>
+                                <action selector="addGrade:" destination="dD0-Ld-NMV" id="xZS-yb-EkI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="addButton" destination="8my-Bg-MxW" id="SU2-bh-0cf"/>
+                        <outlet property="navigationBar" destination="XKP-Ip-eQv" id="b3O-aV-tra"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M4U-1F-AhD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="-567"/>
+        </scene>
+        <!--11thGrade-->
+        <scene sceneID="nbH-Ox-RWr">
+            <objects>
+                <tableViewController id="Lx5-n3-WAk" userLabel="11thGrade" customClass="GradeTableViewController" customModule="GPAerFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="SMt-vL-d1R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="GradeTableViewCell" rowHeight="90" id="XU0-gR-Sdz" customClass="GradeTableViewCell" customModule="GPAerFood" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XU0-gR-Sdz" id="hmO-8Q-gAc">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HuX-i0-lOn">
+                                            <rect key="frame" x="284" y="31" width="83" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Full"/>
+                                                <segment title="Half"/>
+                                            </segments>
+                                        </segmentedControl>
+                                        <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Dfa-jq-epM">
+                                            <rect key="frame" x="107" y="31" width="149" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Reg"/>
+                                                <segment title="Hon"/>
+                                                <segment title="AP"/>
+                                            </segments>
+                                        </segmentedControl>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="eg. 85" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gnn-2L-xY4">
+                                            <rect key="frame" x="39" y="30" width="60" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                        </textField>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="fullHalfControl" destination="HuX-i0-lOn" id="ujI-7r-V6N"/>
+                                    <outlet property="gradeValueField" destination="gnn-2L-xY4" id="it6-HB-UTe"/>
+                                    <outlet property="weightControl" destination="Dfa-jq-epM" id="AVR-wp-1zD"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Lx5-n3-WAk" id="BM4-RK-ZbC"/>
+                            <outlet property="delegate" destination="Lx5-n3-WAk" id="jZk-SW-gtM"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Xth Grade" id="KK4-46-rqx">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="s22-cd-Oqe">
+                            <connections>
+                                <action selector="addGrade:" destination="Lx5-n3-WAk" id="j2o-W2-6xW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="addButton" destination="s22-cd-Oqe" id="2M9-ds-b6F"/>
+                        <outlet property="navigationBar" destination="KK4-46-rqx" id="Jbe-3a-cgs"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Wr-R1-o7G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1857" y="393"/>
+        </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="mkD-To-T9a"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -21,6 +21,7 @@
 		6C20ADD91DF4D2DE007DC525 /* GradeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C20ADD71DF4D2DE007DC525 /* GradeTableViewCell.swift */; };
 		6C20ADDB1DF4DE0A007DC525 /* GradeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C20ADDA1DF4DE0A007DC525 /* GradeTableViewController.swift */; };
 		6C20ADDC1DF4DE0A007DC525 /* GradeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C20ADDA1DF4DE0A007DC525 /* GradeTableViewController.swift */; };
+		6C60293C1DFDD85400D6F978 /* Grade10TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C60293B1DFDD85400D6F978 /* Grade10TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		6C20ADD41DF486BB007DC525 /* Grade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
 		6C20ADD71DF4D2DE007DC525 /* GradeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeTableViewCell.swift; sourceTree = "<group>"; };
 		6C20ADDA1DF4DE0A007DC525 /* GradeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeTableViewController.swift; sourceTree = "<group>"; };
+		6C60293B1DFDD85400D6F978 /* Grade10TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grade10TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				6C20ADD41DF486BB007DC525 /* Grade.swift */,
 				6C20ADB11DF07D46007DC525 /* ViewController.swift */,
 				6C20ADDA1DF4DE0A007DC525 /* GradeTableViewController.swift */,
+				6C60293B1DFDD85400D6F978 /* Grade10TableViewController.swift */,
 				6C20ADD71DF4D2DE007DC525 /* GradeTableViewCell.swift */,
 				6C20ADAF1DF07D46007DC525 /* AppDelegate.swift */,
 				6C20ADB31DF07D46007DC525 /* Main.storyboard */,
@@ -222,6 +225,7 @@
 				6C20ADB21DF07D46007DC525 /* ViewController.swift in Sources */,
 				6C20ADD51DF486BB007DC525 /* Grade.swift in Sources */,
 				6C20ADB01DF07D46007DC525 /* AppDelegate.swift in Sources */,
+				6C60293C1DFDD85400D6F978 /* Grade10TableViewController.swift in Sources */,
 				6C20ADD21DF39941007DC525 /* Year.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
