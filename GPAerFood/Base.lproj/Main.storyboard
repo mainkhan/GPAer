@@ -147,7 +147,7 @@
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="Tee-A3-S5k" userLabel="12thGradeRecognizer">
                     <connections>
-                        <segue destination="Ikv-17-f6X" kind="showDetail" identifier="TwelfthSegue" id="nk6-hq-gmM"/>
+                        <segue destination="Ikv-17-f6X" kind="showDetail" identifier="TwelfthSegue" action="showViewController:sender:" id="nk6-hq-gmM"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -166,7 +166,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tjT-Fv-rU0" id="e8b-IR-Bon">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mbY-eK-oFz">
@@ -217,6 +217,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="addButton" destination="UqQ-nT-dbh" id="Oo1-od-Wgw"/>
+                        <outlet property="navigationBar" destination="0d6-zr-lqp" id="kvM-jh-i0R"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WkZ-vl-hKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -228,6 +229,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NFE-Vh-TOS" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vJm-F8-t2X">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -243,6 +245,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="nk6-hq-gmM"/>
+        <segue reference="mkD-To-T9a"/>
     </inferredMetricsTieBreakers>
 </document>

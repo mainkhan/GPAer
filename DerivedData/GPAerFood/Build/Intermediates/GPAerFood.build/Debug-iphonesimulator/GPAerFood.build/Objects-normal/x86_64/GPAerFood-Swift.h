@@ -173,13 +173,16 @@ SWIFT_CLASS("_TtC9GPAerFood18GradeTableViewCell")
 @class Year;
 @class UIBarButtonItem;
 @class UITableView;
+@class UINavigationItem;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC9GPAerFood24GradeTableViewController")
 @interface GradeTableViewController : UITableViewController
 @property (nonatomic, strong) Year * _Nonnull year;
+@property (nonatomic, weak) IBOutlet UINavigationItem * _Null_unspecified navigationBar;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified addButton;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (IBAction)addGrade:(UIBarButtonItem * _Nonnull)sender;
 - (void)loadSampleYear;
 - (void)didReceiveMemoryWarning;

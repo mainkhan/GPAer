@@ -92,11 +92,11 @@
 			children = (
 				6C20ADD11DF39941007DC525 /* Year.swift */,
 				6C20ADD41DF486BB007DC525 /* Grade.swift */,
+				6C20ADB11DF07D46007DC525 /* ViewController.swift */,
+				6C20ADDA1DF4DE0A007DC525 /* GradeTableViewController.swift */,
 				6C20ADD71DF4D2DE007DC525 /* GradeTableViewCell.swift */,
 				6C20ADAF1DF07D46007DC525 /* AppDelegate.swift */,
-				6C20ADB11DF07D46007DC525 /* ViewController.swift */,
 				6C20ADB31DF07D46007DC525 /* Main.storyboard */,
-				6C20ADDA1DF4DE0A007DC525 /* GradeTableViewController.swift */,
 				6C20ADB61DF07D46007DC525 /* Assets.xcassets */,
 				6C20ADB81DF07D46007DC525 /* LaunchScreen.storyboard */,
 			);

@@ -18,6 +18,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var eleventhGradeLabel: UILabel!
     @IBOutlet weak var twelfthGradeLabel: UILabel!
     
+    // MARK: Data
+    // put an 4 year objects here
+    
 //    let gradientLayer = CAGradientLayer()
     
     override func viewDidLoad() {
@@ -115,16 +118,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
     // MARK: Segues
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "NinthSegue") {
-            print("Ninth grade segue IDENTIFIED")
+            let gradeTableVC = segue.destination as! GradeTableViewController
+            gradeTableVC.navigationBar.title = ninthGradeLabel.text
+//            gradeTableVC.year
+            
+            
         }
         else if (segue.identifier == "TenthSegue") {
-            print("Something else was IDENTIFIED")
+            let gradeTableVC = segue.destination as! GradeTableViewController
+            gradeTableVC.navigationBar.title = tenthGradeLabel.text
         }
         else if (segue.identifier == "EleventhSegue") {
-            print("Eleventh grade segue IDENTIFIED")
+            let gradeTableVC = segue.destination as! GradeTableViewController
+            gradeTableVC.navigationBar.title = eleventhGradeLabel.text
         }
         else if (segue.identifier == "TwelfthSegue") {
-            print("Twelfth grade segue IDENTIFIED")
+            let gradeTableVC = segue.destination as! GradeTableViewController
+            gradeTableVC.navigationBar.title = twelfthGradeLabel.text
         }
     }
 }

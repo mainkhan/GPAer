@@ -13,6 +13,7 @@ class GradeTableViewController: UITableViewController {
     // MARK: Properties
     var year = Year()
     
+    @IBOutlet weak var navigationBar: UINavigationItem!
     @IBOutlet weak var addButton: UIBarButtonItem!
 
     override func viewDidLoad() {
@@ -39,7 +40,6 @@ class GradeTableViewController: UITableViewController {
         // Shiny Orange (trash) 100, 53.7, 0
 //        self.view.backgroundColor = UIColor(red: 1, green: 0.537, blue: 0, alpha: 1)
 
-        
     }
     
     @IBAction func addGrade(_ sender: UIBarButtonItem) {

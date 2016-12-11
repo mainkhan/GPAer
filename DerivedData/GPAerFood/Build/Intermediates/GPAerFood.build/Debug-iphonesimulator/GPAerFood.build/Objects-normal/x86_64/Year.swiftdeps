@@ -8,14 +8,14 @@ provides-member:
 provides-dynamic-lookup:
 - "grades"
 depends-top-level:
-- "Grade"
-- !private "+"
-- "Float"
+- "NSObject"
+- !private "/"
 - "AssignmentPrecedence"
 - !private "=="
-- "NSObject"
+- "Float"
+- !private "+"
+- "Grade"
 - "Year"
-- !private "/"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "Float"]
