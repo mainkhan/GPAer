@@ -121,16 +121,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
             let gradeTableVC = segue.destination as! GradeTableViewController
             gradeTableVC.navigationBar.title = ninthGradeLabel.text
 //            gradeTableVC.year
-            
+//            self.navigationController?.pushViewController(gradeTableVC, animated: true)
             
         }
         else if (segue.identifier == "TenthSegue") {
             let gradeTableVC = segue.destination as! GradeTableViewController
             gradeTableVC.navigationBar.title = tenthGradeLabel.text
+//            self.navigationController?.pushViewController(gradeTableVC, animated: true)
+//            self.navigationController?.setNavigationBarHidden(false, animated: true)
+            print(segue.source as Any)
         }
         else if (segue.identifier == "EleventhSegue") {
             let gradeTableVC = segue.destination as! GradeTableViewController
             gradeTableVC.navigationBar.title = eleventhGradeLabel.text
+//            self.navigationController?.pushViewController(gradeTableVC, animated: true)
         }
         else if (segue.identifier == "TwelfthSegue") {
             let gradeTableVC = segue.destination as! GradeTableViewController

@@ -19,6 +19,8 @@ class GradeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print(self.navigationController as Any)
+        
         // load sample data
         //loadSampleYear()
 

@@ -6,45 +6,45 @@ provides-nominal:
 provides-member:
 - ["C9GPAerFood14ViewController", ""]
 provides-dynamic-lookup:
-- "prepare"
-- "lpgTextField"
+- "schoolTextField"
+- "addDoneButtonOnKeyboard"
 - "touchesBegan"
-- "textFieldShouldReturn"
-- "tenthGradeLabel"
 - "twelfthGradeLabel"
 - "textFieldDidEndEditing"
 - "ninthGradeLabel"
-- "schoolTextField"
-- "addDoneButtonOnKeyboard"
-- "eleventhGradeLabel"
-- "viewDidLoad"
 - "doneButtonAction"
+- "viewDidLoad"
+- "prepare"
+- "eleventhGradeLabel"
+- "tenthGradeLabel"
+- "lpgTextField"
+- "textFieldShouldReturn"
 depends-top-level:
-- !private "BooleanLiteralType"
-- "UITextField"
-- "Bool"
 - "UIViewController"
+- !private "CGRect"
+- !private "UIBarStyle"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- !private "UIColor"
+- !private "=="
+- !private "UIBarButtonItemStyle"
+- "UITextFieldDelegate"
 - !private "UIBarButtonSystemItem"
 - !private "GradeTableViewController"
 - !private "UIBarButtonItem"
-- !private "UIBarButtonItemStyle"
-- !private "UIColor"
-- !private "CGRect"
+- "Bool"
 - "UIEvent"
-- !private "UIBarStyle"
-- !private "StringLiteralType"
+- "UILabel"
 - "Set"
 - "UITouch"
-- !private "!="
-- !private "UIToolbar"
-- "AssignmentPrecedence"
-- !private "=="
-- "UILabel"
-- !private "print"
-- "CastingPrecedence"
 - "ViewController"
+- !private "BooleanLiteralType"
+- !private "!="
+- !private "print"
+- !private "UIToolbar"
+- "UITextField"
+- !private "StringLiteralType"
 - "UIStoryboardSegue"
-- "UITextFieldDelegate"
 depends-member:
 - !private ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
@@ -73,6 +73,7 @@ depends-member:
 - !private ["Ps9AnyObject", "resignFirstResponder"]
 - ["Ps9AnyObject", "schoolTextField"]
 - !private ["Ps9AnyObject", "sizeToFit"]
+- !private ["Ps9AnyObject", "source"]
 - !private ["Ps9AnyObject", "tag"]
 - ["Ps9AnyObject", "tenthGradeLabel"]
 - !private ["Ps9AnyObject", "text"]
@@ -148,6 +149,7 @@ depends-member:
 - !private ["Ps7CVarArg", "resignFirstResponder"]
 - ["Ps7CVarArg", "schoolTextField"]
 - !private ["Ps7CVarArg", "sizeToFit"]
+- !private ["Ps7CVarArg", "source"]
 - !private ["Ps7CVarArg", "tag"]
 - ["Ps7CVarArg", "tenthGradeLabel"]
 - !private ["Ps7CVarArg", "text"]
@@ -201,6 +203,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "resignFirstResponder"]
 - ["Ps28CustomDebugStringConvertible", "schoolTextField"]
 - !private ["Ps28CustomDebugStringConvertible", "sizeToFit"]
+- !private ["Ps28CustomDebugStringConvertible", "source"]
 - !private ["Ps28CustomDebugStringConvertible", "tag"]
 - ["Ps28CustomDebugStringConvertible", "tenthGradeLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
@@ -258,6 +261,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "resignFirstResponder"]
 - ["Ps23CustomStringConvertible", "schoolTextField"]
 - !private ["Ps23CustomStringConvertible", "sizeToFit"]
+- !private ["Ps23CustomStringConvertible", "source"]
 - !private ["Ps23CustomStringConvertible", "tag"]
 - ["Ps23CustomStringConvertible", "tenthGradeLabel"]
 - !private ["Ps23CustomStringConvertible", "text"]
@@ -307,6 +311,7 @@ depends-member:
 - !private ["Ps9Equatable", "resignFirstResponder"]
 - ["Ps9Equatable", "schoolTextField"]
 - !private ["Ps9Equatable", "sizeToFit"]
+- !private ["Ps9Equatable", "source"]
 - !private ["Ps9Equatable", "tag"]
 - ["Ps9Equatable", "tenthGradeLabel"]
 - !private ["Ps9Equatable", "text"]
@@ -368,6 +373,7 @@ depends-member:
 - !private ["Ps8Hashable", "resignFirstResponder"]
 - ["Ps8Hashable", "schoolTextField"]
 - !private ["Ps8Hashable", "sizeToFit"]
+- !private ["Ps8Hashable", "source"]
 - !private ["Ps8Hashable", "tag"]
 - ["Ps8Hashable", "tenthGradeLabel"]
 - !private ["Ps8Hashable", "text"]
@@ -519,6 +525,7 @@ depends-member:
 - !private ["CSo8NSObject", "resignFirstResponder"]
 - ["CSo8NSObject", "schoolTextField"]
 - !private ["CSo8NSObject", "sizeToFit"]
+- !private ["CSo8NSObject", "source"]
 - !private ["CSo8NSObject", "tag"]
 - ["CSo8NSObject", "tenthGradeLabel"]
 - !private ["CSo8NSObject", "text"]
@@ -561,6 +568,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "resignFirstResponder"]
 - ["PSo16NSObjectProtocol", "schoolTextField"]
 - !private ["PSo16NSObjectProtocol", "sizeToFit"]
+- !private ["PSo16NSObjectProtocol", "source"]
 - !private ["PSo16NSObjectProtocol", "tag"]
 - ["PSo16NSObjectProtocol", "tenthGradeLabel"]
 - !private ["PSo16NSObjectProtocol", "text"]
@@ -931,6 +939,7 @@ depends-member:
 - ["CSo17UIStoryboardSegue", "deinit"]
 - !private ["CSo17UIStoryboardSegue", "destination"]
 - !private ["CSo17UIStoryboardSegue", "identifier"]
+- !private ["CSo17UIStoryboardSegue", "source"]
 - !private ["CSo21UITableViewController", "navigationBar"]
 - !private ["PSo21UITableViewDataSource", "navigationBar"]
 - !private ["PSo19UITableViewDelegate", "navigationBar"]
@@ -1167,6 +1176,7 @@ depends-member:
 - !private ["Ps9_Hashable", "resignFirstResponder"]
 - ["Ps9_Hashable", "schoolTextField"]
 - !private ["Ps9_Hashable", "sizeToFit"]
+- !private ["Ps9_Hashable", "source"]
 - !private ["Ps9_Hashable", "tag"]
 - ["Ps9_Hashable", "tenthGradeLabel"]
 - !private ["Ps9_Hashable", "text"]
