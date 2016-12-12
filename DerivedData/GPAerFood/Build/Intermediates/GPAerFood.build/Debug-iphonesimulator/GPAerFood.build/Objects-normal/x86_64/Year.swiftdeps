@@ -8,14 +8,15 @@ provides-member:
 provides-dynamic-lookup:
 - "grades"
 depends-top-level:
-- "NSObject"
-- !private "/"
-- "AssignmentPrecedence"
-- !private "=="
+- "Year"
 - "Float"
 - !private "+"
 - "Grade"
-- "Year"
+- "Int"
+- !private "/"
+- "NSObject"
+- "AssignmentPrecedence"
+- !private "=="
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "Float"]
@@ -25,6 +26,7 @@ depends-member:
 - ["Ps9AnyObject", "gpa"]
 - ["Ps9AnyObject", "grades"]
 - ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "whatGrade"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "IndexDistance"]
 - !private ["Sa", "Iterator"]
@@ -60,6 +62,7 @@ depends-member:
 - ["Ps7CVarArg", "grades"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "isEmpty"]
+- ["Ps7CVarArg", "whatGrade"]
 - ["Ps7CVarArg", ""]
 - !private ["Ps10Collection", "IndexDistance"]
 - !private ["Ps10Collection", "Iterator"]
@@ -80,6 +83,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "grades"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "isEmpty"]
+- ["Ps28CustomDebugStringConvertible", "whatGrade"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
@@ -103,6 +107,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "grades"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "isEmpty"]
+- ["Ps23CustomStringConvertible", "whatGrade"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "Float"]
 - !private ["Ps9Equatable", "Grade"]
@@ -112,6 +117,7 @@ depends-member:
 - ["Ps9Equatable", "gpa"]
 - ["Ps9Equatable", "grades"]
 - ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "whatGrade"]
 - ["Ps9Equatable", ""]
 - !private ["Ps25ExpressibleByArrayLiteral", "IndexDistance"]
 - !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
@@ -135,6 +141,7 @@ depends-member:
 - ["Ps8Hashable", "gpa"]
 - ["Ps8Hashable", "grades"]
 - ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "whatGrade"]
 - ["Ps8Hashable", ""]
 - !private ["Ps9Indexable", "IndexDistance"]
 - !private ["Ps9Indexable", "Iterator"]
@@ -167,12 +174,14 @@ depends-member:
 - !private ["Ps16MutableIndexable", "isEmpty"]
 - ["CSo8NSObject", "Float"]
 - ["CSo8NSObject", "Grade"]
+- ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "calculateGpa"]
 - ["CSo8NSObject", "deinit"]
 - !private ["CSo8NSObject", "getWeightedGrade"]
 - ["CSo8NSObject", "gpa"]
 - ["CSo8NSObject", "grades"]
 - ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "whatGrade"]
 - ["CSo8NSObject", ""]
 - !private ["PSo16NSObjectProtocol", "Float"]
 - !private ["PSo16NSObjectProtocol", "Grade"]
@@ -181,6 +190,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "gpa"]
 - ["PSo16NSObjectProtocol", "grades"]
 - ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "whatGrade"]
 - ["PSo16NSObjectProtocol", ""]
 - ["Sq", "deinit"]
 - !private ["Ps22RandomAccessCollection", "IndexDistance"]
@@ -218,11 +228,13 @@ depends-member:
 - !private ["Ps10Strideable", "init"]
 - ["C9GPAerFood4Year", "Float"]
 - ["C9GPAerFood4Year", "Grade"]
+- ["C9GPAerFood4Year", "Int"]
 - ["C9GPAerFood4Year", "calculateGpa"]
 - ["C9GPAerFood4Year", "deinit"]
 - ["C9GPAerFood4Year", "gpa"]
 - ["C9GPAerFood4Year", "grades"]
 - ["C9GPAerFood4Year", "init"]
+- ["C9GPAerFood4Year", "whatGrade"]
 - !private ["Ps14_ArrayProtocol", "IndexDistance"]
 - !private ["Ps14_ArrayProtocol", "Iterator"]
 - !private ["Ps14_ArrayProtocol", "_Element"]
@@ -248,6 +260,7 @@ depends-member:
 - ["Ps9_Hashable", "gpa"]
 - ["Ps9_Hashable", "grades"]
 - ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "whatGrade"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps21_ObjectiveCBridgeable", "IndexDistance"]
 - !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
@@ -322,4 +335,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "d2bc43b2d01d72810e8eea755a3b7ac1"
+interface-hash: "7dced07071991f5e7d7244a7e04f387b"

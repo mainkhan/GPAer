@@ -132,17 +132,17 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="cPF-EF-xzq" userLabel="9thGradeRecognizer">
                     <connections>
-                        <segue destination="Ikv-17-f6X" kind="showDetail" identifier="NinthSegue" action="showViewController:sender:" id="mkD-To-T9a"/>
+                        <segue destination="Ikv-17-f6X" kind="show" identifier="NinthSegue" id="mkD-To-T9a"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="a6J-PV-qbC" userLabel="10thGradeRecognizer">
                     <connections>
-                        <segue destination="Ikv-17-f6X" kind="showDetail" identifier="TenthSegue" id="gDA-RB-rqB"/>
+                        <segue destination="Ikv-17-f6X" kind="show" identifier="TenthSegue" id="gDA-RB-rqB"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="mwN-Xh-Gl3" userLabel="11thGradeRecognizer">
                     <connections>
-                        <segue destination="Ikv-17-f6X" kind="showDetail" identifier="EleventhSegue" id="VOH-Lh-H8b"/>
+                        <segue destination="Ikv-17-f6X" kind="show" identifier="EleventhSegue" id="gaf-pn-oSp"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="Tee-A3-S5k" userLabel="12thGradeRecognizer">

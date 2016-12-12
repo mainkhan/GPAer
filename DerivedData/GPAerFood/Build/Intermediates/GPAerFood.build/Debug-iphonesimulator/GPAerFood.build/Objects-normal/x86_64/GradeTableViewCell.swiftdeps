@@ -1,51 +1,64 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "TableViewCellProtocol"
 - "GradeTableViewCell"
 provides-nominal:
+- "P9GPAerFood21TableViewCellProtocol"
+- "C9GPAerFood24GradeTableViewController"
 - "C9GPAerFood18GradeTableViewCell"
 provides-member:
+- ["P9GPAerFood21TableViewCellProtocol", ""]
+- ["C9GPAerFood24GradeTableViewController", ""]
 - ["C9GPAerFood18GradeTableViewCell", ""]
 provides-dynamic-lookup:
+- "setSelected"
 - "weightControl"
-- "becomeFirstResponder"
-- "doneButtonAction"
-- "touchesBegan"
 - "addDoneButtonOnKeyboard"
+- "didFinishTask"
+- "awakeFromNib"
+- "touchesBegan"
+- "becomeFirstResponder"
 - "fullHalfControl"
 - "gradeValueField"
-- "setSelected"
-- "awakeFromNib"
+- "doneButtonAction"
 depends-top-level:
-- !private "UIBarButtonSystemItem"
-- "Bool"
-- "Set"
-- "UITouch"
-- !private "!="
-- !private "UIBarButtonItem"
-- !private "ViewController"
-- "UIEvent"
-- "AssignmentPrecedence"
-- "GradeTableViewCell"
-- "UISegmentedControl"
 - !private "CGRect"
 - !private "UIBarStyle"
-- !private "StringLiteralType"
 - "UITableViewCell"
+- "GradeTableViewCell"
+- "Set"
+- "UISegmentedControl"
+- "GradeTableViewController"
+- "UITouch"
+- "UIEvent"
 - !private "UIToolbar"
+- !private "UIColor"
+- !private "!="
+- !private "UIBarButtonSystemItem"
+- "TableViewCellProtocol"
+- !private "ViewController"
+- "Bool"
+- "AssignmentPrecedence"
 - "UITextField"
 - !private "UIBarButtonItemStyle"
+- !private "StringLiteralType"
+- !private "UIBarButtonItem"
 depends-member:
 - !private ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
 - !private ["Ps9AnyObject", "UIBarButtonItemStyle"]
 - !private ["Ps9AnyObject", "UIBarButtonSystemItem"]
 - !private ["Ps9AnyObject", "UIBarStyle"]
+- !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIToolbar"]
 - !private ["Ps9AnyObject", "ViewController"]
 - ["Ps9AnyObject", "addDoneButtonOnKeyboard"]
 - ["Ps9AnyObject", "awakeFromNib"]
+- !private ["Ps9AnyObject", "backgroundColor"]
 - !private ["Ps9AnyObject", "barStyle"]
 - ["Ps9AnyObject", "becomeFirstResponder"]
+- ["Ps9AnyObject", "delegate"]
+- ["Ps9AnyObject", "didFinishTask"]
 - ["Ps9AnyObject", "doneButtonAction"]
 - ["Ps9AnyObject", "fullHalfControl"]
 - ["Ps9AnyObject", "gradeValueField"]
@@ -55,6 +68,7 @@ depends-member:
 - !private ["Ps9AnyObject", "resignFirstResponder"]
 - ["Ps9AnyObject", "setSelected"]
 - !private ["Ps9AnyObject", "sizeToFit"]
+- !private ["Ps9AnyObject", "tintColor"]
 - ["Ps9AnyObject", "touchesBegan"]
 - ["Ps9AnyObject", "weightControl"]
 - ["Ps9AnyObject", ""]
@@ -78,12 +92,15 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "UIBarButtonItemStyle"]
 - !private ["PSo15CALayerDelegate", "UIBarButtonSystemItem"]
 - !private ["PSo15CALayerDelegate", "UIBarStyle"]
+- !private ["PSo15CALayerDelegate", "UIColor"]
 - !private ["PSo15CALayerDelegate", "UIToolbar"]
 - !private ["PSo15CALayerDelegate", "ViewController"]
 - ["PSo15CALayerDelegate", "addDoneButtonOnKeyboard"]
 - ["PSo15CALayerDelegate", "awakeFromNib"]
+- !private ["PSo15CALayerDelegate", "backgroundColor"]
 - !private ["PSo15CALayerDelegate", "barStyle"]
 - ["PSo15CALayerDelegate", "becomeFirstResponder"]
+- ["PSo15CALayerDelegate", "delegate"]
 - ["PSo15CALayerDelegate", "doneButtonAction"]
 - ["PSo15CALayerDelegate", "fullHalfControl"]
 - ["PSo15CALayerDelegate", "gradeValueField"]
@@ -93,9 +110,11 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "resignFirstResponder"]
 - ["PSo15CALayerDelegate", "setSelected"]
 - !private ["PSo15CALayerDelegate", "sizeToFit"]
+- !private ["PSo15CALayerDelegate", "tintColor"]
 - ["PSo15CALayerDelegate", "touchesBegan"]
 - ["PSo15CALayerDelegate", "weightControl"]
 - ["PSo15CALayerDelegate", ""]
+- ["V12CoreGraphics7CGFloat", "deinit"]
 - ["VSC6CGRect", "deinit"]
 - !private ["VSC6CGRect", "init"]
 - !private ["Ps7CVarArg", "CGRect"]
@@ -104,14 +123,18 @@ depends-member:
 - !private ["Ps7CVarArg", "UIBarButtonItemStyle"]
 - !private ["Ps7CVarArg", "UIBarButtonSystemItem"]
 - !private ["Ps7CVarArg", "UIBarStyle"]
+- !private ["Ps7CVarArg", "UIColor"]
 - !private ["Ps7CVarArg", "UIToolbar"]
 - !private ["Ps7CVarArg", "ViewController"]
 - !private ["Ps7CVarArg", "_Element"]
 - ["Ps7CVarArg", "addDoneButtonOnKeyboard"]
 - !private ["Ps7CVarArg", "append"]
 - ["Ps7CVarArg", "awakeFromNib"]
+- !private ["Ps7CVarArg", "backgroundColor"]
 - !private ["Ps7CVarArg", "barStyle"]
 - ["Ps7CVarArg", "becomeFirstResponder"]
+- ["Ps7CVarArg", "delegate"]
+- ["Ps7CVarArg", "didFinishTask"]
 - ["Ps7CVarArg", "doneButtonAction"]
 - !private ["Ps7CVarArg", "first"]
 - ["Ps7CVarArg", "fullHalfControl"]
@@ -122,6 +145,7 @@ depends-member:
 - !private ["Ps7CVarArg", "resignFirstResponder"]
 - ["Ps7CVarArg", "setSelected"]
 - !private ["Ps7CVarArg", "sizeToFit"]
+- !private ["Ps7CVarArg", "tintColor"]
 - ["Ps7CVarArg", "touchesBegan"]
 - ["Ps7CVarArg", "weightControl"]
 - ["Ps7CVarArg", ""]
@@ -137,14 +161,18 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIBarButtonItemStyle"]
 - !private ["Ps28CustomDebugStringConvertible", "UIBarButtonSystemItem"]
 - !private ["Ps28CustomDebugStringConvertible", "UIBarStyle"]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIToolbar"]
 - !private ["Ps28CustomDebugStringConvertible", "ViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - ["Ps28CustomDebugStringConvertible", "addDoneButtonOnKeyboard"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - ["Ps28CustomDebugStringConvertible", "awakeFromNib"]
+- !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - !private ["Ps28CustomDebugStringConvertible", "barStyle"]
 - ["Ps28CustomDebugStringConvertible", "becomeFirstResponder"]
+- ["Ps28CustomDebugStringConvertible", "delegate"]
+- ["Ps28CustomDebugStringConvertible", "didFinishTask"]
 - ["Ps28CustomDebugStringConvertible", "doneButtonAction"]
 - !private ["Ps28CustomDebugStringConvertible", "first"]
 - ["Ps28CustomDebugStringConvertible", "fullHalfControl"]
@@ -155,6 +183,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "resignFirstResponder"]
 - ["Ps28CustomDebugStringConvertible", "setSelected"]
 - !private ["Ps28CustomDebugStringConvertible", "sizeToFit"]
+- !private ["Ps28CustomDebugStringConvertible", "tintColor"]
 - ["Ps28CustomDebugStringConvertible", "touchesBegan"]
 - ["Ps28CustomDebugStringConvertible", "weightControl"]
 - ["Ps28CustomDebugStringConvertible", ""]
@@ -173,6 +202,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIBarButtonItemStyle"]
 - !private ["Ps23CustomStringConvertible", "UIBarButtonSystemItem"]
 - !private ["Ps23CustomStringConvertible", "UIBarStyle"]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIToolbar"]
 - !private ["Ps23CustomStringConvertible", "ViewController"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
@@ -180,8 +210,11 @@ depends-member:
 - ["Ps23CustomStringConvertible", "addDoneButtonOnKeyboard"]
 - !private ["Ps23CustomStringConvertible", "append"]
 - ["Ps23CustomStringConvertible", "awakeFromNib"]
+- !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - !private ["Ps23CustomStringConvertible", "barStyle"]
 - ["Ps23CustomStringConvertible", "becomeFirstResponder"]
+- ["Ps23CustomStringConvertible", "delegate"]
+- ["Ps23CustomStringConvertible", "didFinishTask"]
 - ["Ps23CustomStringConvertible", "doneButtonAction"]
 - !private ["Ps23CustomStringConvertible", "first"]
 - ["Ps23CustomStringConvertible", "fullHalfControl"]
@@ -192,6 +225,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "resignFirstResponder"]
 - ["Ps23CustomStringConvertible", "setSelected"]
 - !private ["Ps23CustomStringConvertible", "sizeToFit"]
+- !private ["Ps23CustomStringConvertible", "tintColor"]
 - ["Ps23CustomStringConvertible", "touchesBegan"]
 - ["Ps23CustomStringConvertible", "weightControl"]
 - ["Ps23CustomStringConvertible", ""]
@@ -201,14 +235,18 @@ depends-member:
 - !private ["Ps9Equatable", "UIBarButtonItemStyle"]
 - !private ["Ps9Equatable", "UIBarButtonSystemItem"]
 - !private ["Ps9Equatable", "UIBarStyle"]
+- !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UIToolbar"]
 - !private ["Ps9Equatable", "ViewController"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "addDoneButtonOnKeyboard"]
 - ["Ps9Equatable", "awakeFromNib"]
+- !private ["Ps9Equatable", "backgroundColor"]
 - !private ["Ps9Equatable", "barStyle"]
 - ["Ps9Equatable", "becomeFirstResponder"]
 - !private ["Ps9Equatable", "default"]
+- ["Ps9Equatable", "delegate"]
+- ["Ps9Equatable", "didFinishTask"]
 - !private ["Ps9Equatable", "done"]
 - ["Ps9Equatable", "doneButtonAction"]
 - !private ["Ps9Equatable", "first"]
@@ -221,6 +259,7 @@ depends-member:
 - !private ["Ps9Equatable", "resignFirstResponder"]
 - ["Ps9Equatable", "setSelected"]
 - !private ["Ps9Equatable", "sizeToFit"]
+- !private ["Ps9Equatable", "tintColor"]
 - ["Ps9Equatable", "touchesBegan"]
 - ["Ps9Equatable", "weightControl"]
 - ["Ps9Equatable", ""]
@@ -237,10 +276,12 @@ depends-member:
 - ["C9GPAerFood18GradeTableViewCell", "Bool"]
 - !private ["C9GPAerFood18GradeTableViewCell", "CGRect"]
 - ["C9GPAerFood18GradeTableViewCell", "Set"]
+- ["C9GPAerFood18GradeTableViewCell", "TableViewCellProtocol"]
 - !private ["C9GPAerFood18GradeTableViewCell", "UIBarButtonItem"]
 - !private ["C9GPAerFood18GradeTableViewCell", "UIBarButtonItemStyle"]
 - !private ["C9GPAerFood18GradeTableViewCell", "UIBarButtonSystemItem"]
 - !private ["C9GPAerFood18GradeTableViewCell", "UIBarStyle"]
+- !private ["C9GPAerFood18GradeTableViewCell", "UIColor"]
 - ["C9GPAerFood18GradeTableViewCell", "UIEvent"]
 - ["C9GPAerFood18GradeTableViewCell", "UISegmentedControl"]
 - ["C9GPAerFood18GradeTableViewCell", "UITextField"]
@@ -249,8 +290,10 @@ depends-member:
 - !private ["C9GPAerFood18GradeTableViewCell", "ViewController"]
 - ["C9GPAerFood18GradeTableViewCell", "addDoneButtonOnKeyboard"]
 - ["C9GPAerFood18GradeTableViewCell", "awakeFromNib"]
+- !private ["C9GPAerFood18GradeTableViewCell", "backgroundColor"]
 - ["C9GPAerFood18GradeTableViewCell", "becomeFirstResponder"]
 - ["C9GPAerFood18GradeTableViewCell", "deinit"]
+- ["C9GPAerFood18GradeTableViewCell", "delegate"]
 - ["C9GPAerFood18GradeTableViewCell", "doneButtonAction"]
 - ["C9GPAerFood18GradeTableViewCell", "fullHalfControl"]
 - ["C9GPAerFood18GradeTableViewCell", "gradeValueField"]
@@ -258,20 +301,27 @@ depends-member:
 - ["C9GPAerFood18GradeTableViewCell", "setSelected"]
 - ["C9GPAerFood18GradeTableViewCell", "touchesBegan"]
 - ["C9GPAerFood18GradeTableViewCell", "weightControl"]
+- ["C9GPAerFood24GradeTableViewController", "UITableViewCell"]
+- ["C9GPAerFood24GradeTableViewController", "deinit"]
+- ["C9GPAerFood24GradeTableViewController", "didFinishTask"]
 - !private ["Ps8Hashable", "CGRect"]
 - !private ["Ps8Hashable", "Iterator"]
 - !private ["Ps8Hashable", "UIBarButtonItem"]
 - !private ["Ps8Hashable", "UIBarButtonItemStyle"]
 - !private ["Ps8Hashable", "UIBarButtonSystemItem"]
 - !private ["Ps8Hashable", "UIBarStyle"]
+- !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIToolbar"]
 - !private ["Ps8Hashable", "ViewController"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "addDoneButtonOnKeyboard"]
 - ["Ps8Hashable", "awakeFromNib"]
+- !private ["Ps8Hashable", "backgroundColor"]
 - !private ["Ps8Hashable", "barStyle"]
 - ["Ps8Hashable", "becomeFirstResponder"]
 - !private ["Ps8Hashable", "default"]
+- ["Ps8Hashable", "delegate"]
+- ["Ps8Hashable", "didFinishTask"]
 - !private ["Ps8Hashable", "done"]
 - ["Ps8Hashable", "doneButtonAction"]
 - !private ["Ps8Hashable", "first"]
@@ -284,6 +334,7 @@ depends-member:
 - !private ["Ps8Hashable", "resignFirstResponder"]
 - ["Ps8Hashable", "setSelected"]
 - !private ["Ps8Hashable", "sizeToFit"]
+- !private ["Ps8Hashable", "tintColor"]
 - ["Ps8Hashable", "touchesBegan"]
 - ["Ps8Hashable", "weightControl"]
 - ["Ps8Hashable", ""]
@@ -318,12 +369,16 @@ depends-member:
 - !private ["PSo8NSCoding", "UIBarButtonItemStyle"]
 - !private ["PSo8NSCoding", "UIBarButtonSystemItem"]
 - !private ["PSo8NSCoding", "UIBarStyle"]
+- !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIToolbar"]
 - !private ["PSo8NSCoding", "ViewController"]
 - ["PSo8NSCoding", "addDoneButtonOnKeyboard"]
 - ["PSo8NSCoding", "awakeFromNib"]
+- !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "barStyle"]
 - ["PSo8NSCoding", "becomeFirstResponder"]
+- ["PSo8NSCoding", "delegate"]
+- ["PSo8NSCoding", "didFinishTask"]
 - ["PSo8NSCoding", "doneButtonAction"]
 - ["PSo8NSCoding", "fullHalfControl"]
 - ["PSo8NSCoding", "gradeValueField"]
@@ -333,29 +388,37 @@ depends-member:
 - !private ["PSo8NSCoding", "resignFirstResponder"]
 - ["PSo8NSCoding", "setSelected"]
 - !private ["PSo8NSCoding", "sizeToFit"]
+- !private ["PSo8NSCoding", "tintColor"]
 - ["PSo8NSCoding", "touchesBegan"]
 - ["PSo8NSCoding", "weightControl"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
+- ["PSo26NSExtensionRequestHandling", "didFinishTask"]
 - !private ["PSo26NSExtensionRequestHandling", "doneButtonAction"]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "CGRect"]
 - ["CSo8NSObject", "Set"]
+- ["CSo8NSObject", "TableViewCellProtocol"]
 - !private ["CSo8NSObject", "UIBarButtonItem"]
 - !private ["CSo8NSObject", "UIBarButtonItemStyle"]
 - !private ["CSo8NSObject", "UIBarButtonSystemItem"]
 - !private ["CSo8NSObject", "UIBarStyle"]
+- !private ["CSo8NSObject", "UIColor"]
 - ["CSo8NSObject", "UIEvent"]
 - ["CSo8NSObject", "UISegmentedControl"]
+- ["CSo8NSObject", "UITableViewCell"]
 - ["CSo8NSObject", "UITextField"]
 - !private ["CSo8NSObject", "UIToolbar"]
 - ["CSo8NSObject", "UITouch"]
 - !private ["CSo8NSObject", "ViewController"]
 - ["CSo8NSObject", "addDoneButtonOnKeyboard"]
 - ["CSo8NSObject", "awakeFromNib"]
+- !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "barStyle"]
 - ["CSo8NSObject", "becomeFirstResponder"]
+- ["CSo8NSObject", "delegate"]
+- ["CSo8NSObject", "didFinishTask"]
 - ["CSo8NSObject", "doneButtonAction"]
 - ["CSo8NSObject", "fullHalfControl"]
 - ["CSo8NSObject", "gradeValueField"]
@@ -365,6 +428,7 @@ depends-member:
 - !private ["CSo8NSObject", "resignFirstResponder"]
 - ["CSo8NSObject", "setSelected"]
 - !private ["CSo8NSObject", "sizeToFit"]
+- !private ["CSo8NSObject", "tintColor"]
 - ["CSo8NSObject", "touchesBegan"]
 - ["CSo8NSObject", "weightControl"]
 - !private ["PSo16NSObjectProtocol", "CGRect"]
@@ -372,12 +436,16 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIBarButtonItemStyle"]
 - !private ["PSo16NSObjectProtocol", "UIBarButtonSystemItem"]
 - !private ["PSo16NSObjectProtocol", "UIBarStyle"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIToolbar"]
 - !private ["PSo16NSObjectProtocol", "ViewController"]
 - ["PSo16NSObjectProtocol", "addDoneButtonOnKeyboard"]
 - ["PSo16NSObjectProtocol", "awakeFromNib"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "barStyle"]
 - ["PSo16NSObjectProtocol", "becomeFirstResponder"]
+- ["PSo16NSObjectProtocol", "delegate"]
+- ["PSo16NSObjectProtocol", "didFinishTask"]
 - ["PSo16NSObjectProtocol", "doneButtonAction"]
 - ["PSo16NSObjectProtocol", "fullHalfControl"]
 - ["PSo16NSObjectProtocol", "gradeValueField"]
@@ -387,6 +455,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "resignFirstResponder"]
 - ["PSo16NSObjectProtocol", "setSelected"]
 - !private ["PSo16NSObjectProtocol", "sizeToFit"]
+- !private ["PSo16NSObjectProtocol", "tintColor"]
 - ["PSo16NSObjectProtocol", "touchesBegan"]
 - ["PSo16NSObjectProtocol", "weightControl"]
 - ["PSo16NSObjectProtocol", ""]
@@ -427,6 +496,9 @@ depends-member:
 - !private ["Vs11SetIterator", "Element"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
+- ["P9GPAerFood21TableViewCellProtocol", "UITableViewCell"]
+- ["P9GPAerFood21TableViewCellProtocol", "didFinishTask"]
+- ["P9GPAerFood21TableViewCellProtocol", ""]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "CGRect"]
@@ -434,12 +506,15 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "UIBarButtonItemStyle"]
 - !private ["PSo29UIAccessibilityIdentification", "UIBarButtonSystemItem"]
 - !private ["PSo29UIAccessibilityIdentification", "UIBarStyle"]
+- !private ["PSo29UIAccessibilityIdentification", "UIColor"]
 - !private ["PSo29UIAccessibilityIdentification", "UIToolbar"]
 - !private ["PSo29UIAccessibilityIdentification", "ViewController"]
 - ["PSo29UIAccessibilityIdentification", "addDoneButtonOnKeyboard"]
 - ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "barStyle"]
 - ["PSo29UIAccessibilityIdentification", "becomeFirstResponder"]
+- ["PSo29UIAccessibilityIdentification", "delegate"]
 - ["PSo29UIAccessibilityIdentification", "doneButtonAction"]
 - ["PSo29UIAccessibilityIdentification", "fullHalfControl"]
 - ["PSo29UIAccessibilityIdentification", "gradeValueField"]
@@ -449,6 +524,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "resignFirstResponder"]
 - ["PSo29UIAccessibilityIdentification", "setSelected"]
 - !private ["PSo29UIAccessibilityIdentification", "sizeToFit"]
+- !private ["PSo29UIAccessibilityIdentification", "tintColor"]
 - ["PSo29UIAccessibilityIdentification", "touchesBegan"]
 - ["PSo29UIAccessibilityIdentification", "weightControl"]
 - ["PSo29UIAccessibilityIdentification", ""]
@@ -457,12 +533,15 @@ depends-member:
 - !private ["PSo12UIAppearance", "UIBarButtonItemStyle"]
 - !private ["PSo12UIAppearance", "UIBarButtonSystemItem"]
 - !private ["PSo12UIAppearance", "UIBarStyle"]
+- !private ["PSo12UIAppearance", "UIColor"]
 - !private ["PSo12UIAppearance", "UIToolbar"]
 - !private ["PSo12UIAppearance", "ViewController"]
 - ["PSo12UIAppearance", "addDoneButtonOnKeyboard"]
 - ["PSo12UIAppearance", "awakeFromNib"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "barStyle"]
 - ["PSo12UIAppearance", "becomeFirstResponder"]
+- ["PSo12UIAppearance", "delegate"]
 - ["PSo12UIAppearance", "doneButtonAction"]
 - ["PSo12UIAppearance", "fullHalfControl"]
 - ["PSo12UIAppearance", "gradeValueField"]
@@ -472,6 +551,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "resignFirstResponder"]
 - ["PSo12UIAppearance", "setSelected"]
 - !private ["PSo12UIAppearance", "sizeToFit"]
+- !private ["PSo12UIAppearance", "tintColor"]
 - ["PSo12UIAppearance", "touchesBegan"]
 - ["PSo12UIAppearance", "weightControl"]
 - ["PSo12UIAppearance", ""]
@@ -480,12 +560,16 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIBarButtonItemStyle"]
 - !private ["PSo21UIAppearanceContainer", "UIBarButtonSystemItem"]
 - !private ["PSo21UIAppearanceContainer", "UIBarStyle"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIToolbar"]
 - !private ["PSo21UIAppearanceContainer", "ViewController"]
 - ["PSo21UIAppearanceContainer", "addDoneButtonOnKeyboard"]
 - ["PSo21UIAppearanceContainer", "awakeFromNib"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - !private ["PSo21UIAppearanceContainer", "barStyle"]
 - ["PSo21UIAppearanceContainer", "becomeFirstResponder"]
+- ["PSo21UIAppearanceContainer", "delegate"]
+- ["PSo21UIAppearanceContainer", "didFinishTask"]
 - ["PSo21UIAppearanceContainer", "doneButtonAction"]
 - ["PSo21UIAppearanceContainer", "fullHalfControl"]
 - ["PSo21UIAppearanceContainer", "gradeValueField"]
@@ -495,6 +579,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "resignFirstResponder"]
 - ["PSo21UIAppearanceContainer", "setSelected"]
 - !private ["PSo21UIAppearanceContainer", "sizeToFit"]
+- !private ["PSo21UIAppearanceContainer", "tintColor"]
 - ["PSo21UIAppearanceContainer", "touchesBegan"]
 - ["PSo21UIAppearanceContainer", "weightControl"]
 - ["PSo21UIAppearanceContainer", ""]
@@ -511,6 +596,9 @@ depends-member:
 - !private ["PSo16UIBarPositioning", "sizeToFit"]
 - !private ["OSC10UIBarStyle", "default"]
 - ["OSC10UIBarStyle", "deinit"]
+- ["CSo7UIColor", "deinit"]
+- !private ["CSo7UIColor", "init"]
+- ["PSo18UIContentContainer", "didFinishTask"]
 - !private ["PSo18UIContentContainer", "doneButtonAction"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "becomeFirstResponder"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "inputAccessoryView"]
@@ -518,17 +606,21 @@ depends-member:
 - !private ["CSo9UIControl", "becomeFirstResponder"]
 - !private ["CSo9UIControl", "inputAccessoryView"]
 - !private ["CSo9UIControl", "resignFirstResponder"]
+- !private ["CSo9UIControl", "tintColor"]
 - !private ["PSo17UICoordinateSpace", "CGRect"]
 - !private ["PSo17UICoordinateSpace", "UIBarButtonItem"]
 - !private ["PSo17UICoordinateSpace", "UIBarButtonItemStyle"]
 - !private ["PSo17UICoordinateSpace", "UIBarButtonSystemItem"]
 - !private ["PSo17UICoordinateSpace", "UIBarStyle"]
+- !private ["PSo17UICoordinateSpace", "UIColor"]
 - !private ["PSo17UICoordinateSpace", "UIToolbar"]
 - !private ["PSo17UICoordinateSpace", "ViewController"]
 - ["PSo17UICoordinateSpace", "addDoneButtonOnKeyboard"]
 - ["PSo17UICoordinateSpace", "awakeFromNib"]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "barStyle"]
 - ["PSo17UICoordinateSpace", "becomeFirstResponder"]
+- ["PSo17UICoordinateSpace", "delegate"]
 - ["PSo17UICoordinateSpace", "doneButtonAction"]
 - ["PSo17UICoordinateSpace", "fullHalfControl"]
 - ["PSo17UICoordinateSpace", "gradeValueField"]
@@ -538,6 +630,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "resignFirstResponder"]
 - ["PSo17UICoordinateSpace", "setSelected"]
 - !private ["PSo17UICoordinateSpace", "sizeToFit"]
+- !private ["PSo17UICoordinateSpace", "tintColor"]
 - ["PSo17UICoordinateSpace", "touchesBegan"]
 - ["PSo17UICoordinateSpace", "weightControl"]
 - ["PSo17UICoordinateSpace", ""]
@@ -546,12 +639,15 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "UIBarButtonItemStyle"]
 - !private ["PSo13UIDynamicItem", "UIBarButtonSystemItem"]
 - !private ["PSo13UIDynamicItem", "UIBarStyle"]
+- !private ["PSo13UIDynamicItem", "UIColor"]
 - !private ["PSo13UIDynamicItem", "UIToolbar"]
 - !private ["PSo13UIDynamicItem", "ViewController"]
 - ["PSo13UIDynamicItem", "addDoneButtonOnKeyboard"]
 - ["PSo13UIDynamicItem", "awakeFromNib"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "barStyle"]
 - ["PSo13UIDynamicItem", "becomeFirstResponder"]
+- ["PSo13UIDynamicItem", "delegate"]
 - ["PSo13UIDynamicItem", "doneButtonAction"]
 - ["PSo13UIDynamicItem", "fullHalfControl"]
 - ["PSo13UIDynamicItem", "gradeValueField"]
@@ -561,6 +657,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "resignFirstResponder"]
 - ["PSo13UIDynamicItem", "setSelected"]
 - !private ["PSo13UIDynamicItem", "sizeToFit"]
+- !private ["PSo13UIDynamicItem", "tintColor"]
 - ["PSo13UIDynamicItem", "touchesBegan"]
 - ["PSo13UIDynamicItem", "weightControl"]
 - ["PSo13UIDynamicItem", ""]
@@ -569,12 +666,16 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIBarButtonItemStyle"]
 - !private ["PSo18UIFocusEnvironment", "UIBarButtonSystemItem"]
 - !private ["PSo18UIFocusEnvironment", "UIBarStyle"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIToolbar"]
 - !private ["PSo18UIFocusEnvironment", "ViewController"]
 - ["PSo18UIFocusEnvironment", "addDoneButtonOnKeyboard"]
 - ["PSo18UIFocusEnvironment", "awakeFromNib"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - !private ["PSo18UIFocusEnvironment", "barStyle"]
 - ["PSo18UIFocusEnvironment", "becomeFirstResponder"]
+- ["PSo18UIFocusEnvironment", "delegate"]
+- ["PSo18UIFocusEnvironment", "didFinishTask"]
 - ["PSo18UIFocusEnvironment", "doneButtonAction"]
 - ["PSo18UIFocusEnvironment", "fullHalfControl"]
 - ["PSo18UIFocusEnvironment", "gradeValueField"]
@@ -584,6 +685,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "resignFirstResponder"]
 - ["PSo18UIFocusEnvironment", "setSelected"]
 - !private ["PSo18UIFocusEnvironment", "sizeToFit"]
+- !private ["PSo18UIFocusEnvironment", "tintColor"]
 - ["PSo18UIFocusEnvironment", "touchesBegan"]
 - ["PSo18UIFocusEnvironment", "weightControl"]
 - ["PSo18UIFocusEnvironment", ""]
@@ -592,12 +694,15 @@ depends-member:
 - !private ["PSo11UIFocusItem", "UIBarButtonItemStyle"]
 - !private ["PSo11UIFocusItem", "UIBarButtonSystemItem"]
 - !private ["PSo11UIFocusItem", "UIBarStyle"]
+- !private ["PSo11UIFocusItem", "UIColor"]
 - !private ["PSo11UIFocusItem", "UIToolbar"]
 - !private ["PSo11UIFocusItem", "ViewController"]
 - ["PSo11UIFocusItem", "addDoneButtonOnKeyboard"]
 - ["PSo11UIFocusItem", "awakeFromNib"]
+- !private ["PSo11UIFocusItem", "backgroundColor"]
 - !private ["PSo11UIFocusItem", "barStyle"]
 - ["PSo11UIFocusItem", "becomeFirstResponder"]
+- ["PSo11UIFocusItem", "delegate"]
 - ["PSo11UIFocusItem", "doneButtonAction"]
 - ["PSo11UIFocusItem", "fullHalfControl"]
 - ["PSo11UIFocusItem", "gradeValueField"]
@@ -607,6 +712,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "resignFirstResponder"]
 - ["PSo11UIFocusItem", "setSelected"]
 - !private ["PSo11UIFocusItem", "sizeToFit"]
+- !private ["PSo11UIFocusItem", "tintColor"]
 - ["PSo11UIFocusItem", "touchesBegan"]
 - ["PSo11UIFocusItem", "weightControl"]
 - ["PSo11UIFocusItem", ""]
@@ -615,11 +721,14 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "UIBarButtonItemStyle"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UIBarButtonSystemItem"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UIBarStyle"]
+- !private ["PSo27UIGestureRecognizerDelegate", "UIColor"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UIToolbar"]
 - !private ["PSo27UIGestureRecognizerDelegate", "ViewController"]
 - ["PSo27UIGestureRecognizerDelegate", "addDoneButtonOnKeyboard"]
 - ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
+- !private ["PSo27UIGestureRecognizerDelegate", "backgroundColor"]
 - ["PSo27UIGestureRecognizerDelegate", "becomeFirstResponder"]
+- ["PSo27UIGestureRecognizerDelegate", "delegate"]
 - ["PSo27UIGestureRecognizerDelegate", "doneButtonAction"]
 - ["PSo27UIGestureRecognizerDelegate", "fullHalfControl"]
 - ["PSo27UIGestureRecognizerDelegate", "gradeValueField"]
@@ -634,20 +743,26 @@ depends-member:
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "CGRect"]
 - ["CSo11UIResponder", "Set"]
+- ["CSo11UIResponder", "TableViewCellProtocol"]
 - !private ["CSo11UIResponder", "UIBarButtonItem"]
 - !private ["CSo11UIResponder", "UIBarButtonItemStyle"]
 - !private ["CSo11UIResponder", "UIBarButtonSystemItem"]
 - !private ["CSo11UIResponder", "UIBarStyle"]
+- !private ["CSo11UIResponder", "UIColor"]
 - ["CSo11UIResponder", "UIEvent"]
 - ["CSo11UIResponder", "UISegmentedControl"]
+- ["CSo11UIResponder", "UITableViewCell"]
 - ["CSo11UIResponder", "UITextField"]
 - !private ["CSo11UIResponder", "UIToolbar"]
 - ["CSo11UIResponder", "UITouch"]
 - !private ["CSo11UIResponder", "ViewController"]
 - ["CSo11UIResponder", "addDoneButtonOnKeyboard"]
 - ["CSo11UIResponder", "awakeFromNib"]
+- !private ["CSo11UIResponder", "backgroundColor"]
 - !private ["CSo11UIResponder", "barStyle"]
 - ["CSo11UIResponder", "becomeFirstResponder"]
+- ["CSo11UIResponder", "delegate"]
+- ["CSo11UIResponder", "didFinishTask"]
 - ["CSo11UIResponder", "doneButtonAction"]
 - ["CSo11UIResponder", "fullHalfControl"]
 - ["CSo11UIResponder", "gradeValueField"]
@@ -657,6 +772,7 @@ depends-member:
 - !private ["CSo11UIResponder", "resignFirstResponder"]
 - ["CSo11UIResponder", "setSelected"]
 - !private ["CSo11UIResponder", "sizeToFit"]
+- !private ["CSo11UIResponder", "tintColor"]
 - ["CSo11UIResponder", "touchesBegan"]
 - ["CSo11UIResponder", "weightControl"]
 - !private ["PSo30UIResponderStandardEditActions", "CGRect"]
@@ -664,12 +780,16 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UIBarButtonItemStyle"]
 - !private ["PSo30UIResponderStandardEditActions", "UIBarButtonSystemItem"]
 - !private ["PSo30UIResponderStandardEditActions", "UIBarStyle"]
+- !private ["PSo30UIResponderStandardEditActions", "UIColor"]
 - !private ["PSo30UIResponderStandardEditActions", "UIToolbar"]
 - !private ["PSo30UIResponderStandardEditActions", "ViewController"]
 - ["PSo30UIResponderStandardEditActions", "addDoneButtonOnKeyboard"]
 - ["PSo30UIResponderStandardEditActions", "awakeFromNib"]
+- !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
 - !private ["PSo30UIResponderStandardEditActions", "barStyle"]
 - ["PSo30UIResponderStandardEditActions", "becomeFirstResponder"]
+- ["PSo30UIResponderStandardEditActions", "delegate"]
+- ["PSo30UIResponderStandardEditActions", "didFinishTask"]
 - ["PSo30UIResponderStandardEditActions", "doneButtonAction"]
 - ["PSo30UIResponderStandardEditActions", "fullHalfControl"]
 - ["PSo30UIResponderStandardEditActions", "gradeValueField"]
@@ -679,17 +799,23 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "resignFirstResponder"]
 - ["PSo30UIResponderStandardEditActions", "setSelected"]
 - !private ["PSo30UIResponderStandardEditActions", "sizeToFit"]
+- !private ["PSo30UIResponderStandardEditActions", "tintColor"]
 - ["PSo30UIResponderStandardEditActions", "touchesBegan"]
 - ["PSo30UIResponderStandardEditActions", "weightControl"]
 - ["PSo30UIResponderStandardEditActions", ""]
+- ["PSo20UIScrollViewDelegate", "didFinishTask"]
+- !private ["CSo18UISegmentedControl", "tintColor"]
+- ["PSo16UIStateRestoring", "didFinishTask"]
 - !private ["PSo16UIStateRestoring", "doneButtonAction"]
 - ["CSo15UITableViewCell", "Bool"]
 - !private ["CSo15UITableViewCell", "CGRect"]
 - ["CSo15UITableViewCell", "Set"]
+- ["CSo15UITableViewCell", "TableViewCellProtocol"]
 - !private ["CSo15UITableViewCell", "UIBarButtonItem"]
 - !private ["CSo15UITableViewCell", "UIBarButtonItemStyle"]
 - !private ["CSo15UITableViewCell", "UIBarButtonSystemItem"]
 - !private ["CSo15UITableViewCell", "UIBarStyle"]
+- !private ["CSo15UITableViewCell", "UIColor"]
 - ["CSo15UITableViewCell", "UIEvent"]
 - ["CSo15UITableViewCell", "UISegmentedControl"]
 - ["CSo15UITableViewCell", "UITextField"]
@@ -698,8 +824,10 @@ depends-member:
 - !private ["CSo15UITableViewCell", "ViewController"]
 - ["CSo15UITableViewCell", "addDoneButtonOnKeyboard"]
 - ["CSo15UITableViewCell", "awakeFromNib"]
+- !private ["CSo15UITableViewCell", "backgroundColor"]
 - ["CSo15UITableViewCell", "becomeFirstResponder"]
 - ["CSo15UITableViewCell", "deinit"]
+- ["CSo15UITableViewCell", "delegate"]
 - ["CSo15UITableViewCell", "doneButtonAction"]
 - ["CSo15UITableViewCell", "fullHalfControl"]
 - ["CSo15UITableViewCell", "gradeValueField"]
@@ -709,6 +837,10 @@ depends-member:
 - ["CSo15UITableViewCell", "weightControl"]
 - ["CSo15UITableViewCell", ""]
 - ["OSC20UITableViewCellStyle", "deinit"]
+- ["CSo21UITableViewController", "UITableViewCell"]
+- ["CSo21UITableViewController", "didFinishTask"]
+- ["PSo21UITableViewDataSource", "didFinishTask"]
+- ["PSo19UITableViewDelegate", "didFinishTask"]
 - !private ["CSo11UITextField", "becomeFirstResponder"]
 - !private ["CSo11UITextField", "inputAccessoryView"]
 - !private ["CSo11UITextField", "resignFirstResponder"]
@@ -729,12 +861,16 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIBarButtonItemStyle"]
 - !private ["PSo18UITraitEnvironment", "UIBarButtonSystemItem"]
 - !private ["PSo18UITraitEnvironment", "UIBarStyle"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIToolbar"]
 - !private ["PSo18UITraitEnvironment", "ViewController"]
 - ["PSo18UITraitEnvironment", "addDoneButtonOnKeyboard"]
 - ["PSo18UITraitEnvironment", "awakeFromNib"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - !private ["PSo18UITraitEnvironment", "barStyle"]
 - ["PSo18UITraitEnvironment", "becomeFirstResponder"]
+- ["PSo18UITraitEnvironment", "delegate"]
+- ["PSo18UITraitEnvironment", "didFinishTask"]
 - ["PSo18UITraitEnvironment", "doneButtonAction"]
 - ["PSo18UITraitEnvironment", "fullHalfControl"]
 - ["PSo18UITraitEnvironment", "gradeValueField"]
@@ -744,16 +880,19 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "resignFirstResponder"]
 - ["PSo18UITraitEnvironment", "setSelected"]
 - !private ["PSo18UITraitEnvironment", "sizeToFit"]
+- !private ["PSo18UITraitEnvironment", "tintColor"]
 - ["PSo18UITraitEnvironment", "touchesBegan"]
 - ["PSo18UITraitEnvironment", "weightControl"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "Bool"]
 - !private ["CSo6UIView", "CGRect"]
 - ["CSo6UIView", "Set"]
+- ["CSo6UIView", "TableViewCellProtocol"]
 - !private ["CSo6UIView", "UIBarButtonItem"]
 - !private ["CSo6UIView", "UIBarButtonItemStyle"]
 - !private ["CSo6UIView", "UIBarButtonSystemItem"]
 - !private ["CSo6UIView", "UIBarStyle"]
+- !private ["CSo6UIView", "UIColor"]
 - ["CSo6UIView", "UIEvent"]
 - ["CSo6UIView", "UISegmentedControl"]
 - ["CSo6UIView", "UITextField"]
@@ -762,8 +901,10 @@ depends-member:
 - !private ["CSo6UIView", "ViewController"]
 - ["CSo6UIView", "addDoneButtonOnKeyboard"]
 - ["CSo6UIView", "awakeFromNib"]
+- !private ["CSo6UIView", "backgroundColor"]
 - !private ["CSo6UIView", "barStyle"]
 - ["CSo6UIView", "becomeFirstResponder"]
+- ["CSo6UIView", "delegate"]
 - ["CSo6UIView", "doneButtonAction"]
 - ["CSo6UIView", "fullHalfControl"]
 - ["CSo6UIView", "gradeValueField"]
@@ -773,8 +914,11 @@ depends-member:
 - !private ["CSo6UIView", "resignFirstResponder"]
 - ["CSo6UIView", "setSelected"]
 - !private ["CSo6UIView", "sizeToFit"]
+- !private ["CSo6UIView", "tintColor"]
 - ["CSo6UIView", "touchesBegan"]
 - ["CSo6UIView", "weightControl"]
+- ["CSo16UIViewController", "UITableViewCell"]
+- ["CSo16UIViewController", "didFinishTask"]
 - !private ["CSo16UIViewController", "doneButtonAction"]
 - !private ["C9GPAerFood14ViewController", "doneButtonAction"]
 - !private ["Ps14_ArrayProtocol", "Iterator"]
@@ -786,12 +930,15 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIBarButtonItemStyle"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIBarButtonSystemItem"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIBarStyle"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIColor"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIToolbar"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "ViewController"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "addDoneButtonOnKeyboard"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "awakeFromNib"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "barStyle"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "becomeFirstResponder"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "delegate"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "doneButtonAction"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "fullHalfControl"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "gradeValueField"]
@@ -801,6 +948,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "resignFirstResponder"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "setSelected"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "sizeToFit"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "tintColor"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "touchesBegan"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "weightControl"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
@@ -813,6 +961,7 @@ depends-member:
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps26_ExpressibleByColorLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "CGRect"]
 - !private ["Ps9_Hashable", "Iterator"]
@@ -820,14 +969,18 @@ depends-member:
 - !private ["Ps9_Hashable", "UIBarButtonItemStyle"]
 - !private ["Ps9_Hashable", "UIBarButtonSystemItem"]
 - !private ["Ps9_Hashable", "UIBarStyle"]
+- !private ["Ps9_Hashable", "UIColor"]
 - !private ["Ps9_Hashable", "UIToolbar"]
 - !private ["Ps9_Hashable", "ViewController"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - ["Ps9_Hashable", "addDoneButtonOnKeyboard"]
 - ["Ps9_Hashable", "awakeFromNib"]
+- !private ["Ps9_Hashable", "backgroundColor"]
 - !private ["Ps9_Hashable", "barStyle"]
 - ["Ps9_Hashable", "becomeFirstResponder"]
 - !private ["Ps9_Hashable", "default"]
+- ["Ps9_Hashable", "delegate"]
+- ["Ps9_Hashable", "didFinishTask"]
 - !private ["Ps9_Hashable", "done"]
 - ["Ps9_Hashable", "doneButtonAction"]
 - !private ["Ps9_Hashable", "first"]
@@ -840,6 +993,7 @@ depends-member:
 - !private ["Ps9_Hashable", "resignFirstResponder"]
 - ["Ps9_Hashable", "setSelected"]
 - !private ["Ps9_Hashable", "sizeToFit"]
+- !private ["Ps9_Hashable", "tintColor"]
 - ["Ps9_Hashable", "touchesBegan"]
 - ["Ps9_Hashable", "weightControl"]
 - ["Ps9_Hashable", ""]
@@ -857,6 +1011,7 @@ depends-nominal:
 - !private "Ps22BidirectionalIndexable"
 - "Sb"
 - "PSo15CALayerDelegate"
+- "V12CoreGraphics7CGFloat"
 - "VSC6CGRect"
 - "Ps7CVarArg"
 - !private "Ps10Collection"
@@ -873,6 +1028,7 @@ depends-nominal:
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - "C9GPAerFood18GradeTableViewCell"
+- "C9GPAerFood24GradeTableViewController"
 - "Ps8Hashable"
 - "SQ"
 - !private "Ps9Indexable"
@@ -887,7 +1043,7 @@ depends-nominal:
 - "CSo7NSCoder"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
-- !private "PSo26NSExtensionRequestHandling"
+- "PSo26NSExtensionRequestHandling"
 - !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
@@ -905,6 +1061,7 @@ depends-nominal:
 - !private "Ps10SetAlgebra"
 - !private "Vs11SetIterator"
 - "SS"
+- "P9GPAerFood21TableViewCellProtocol"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
 - "PSo29UIAccessibilityIdentification"
@@ -916,7 +1073,8 @@ depends-nominal:
 - !private "CSo9UIBarItem"
 - !private "PSo16UIBarPositioning"
 - "OSC10UIBarStyle"
-- !private "PSo18UIContentContainer"
+- "CSo7UIColor"
+- "PSo18UIContentContainer"
 - !private "PSo30UIContentSizeCategoryAdjusting"
 - !private "CSo9UIControl"
 - "PSo17UICoordinateSpace"
@@ -927,9 +1085,14 @@ depends-nominal:
 - !private "PSo10UIKeyInput"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
-- !private "PSo16UIStateRestoring"
+- "PSo20UIScrollViewDelegate"
+- !private "CSo18UISegmentedControl"
+- "PSo16UIStateRestoring"
 - "CSo15UITableViewCell"
 - "OSC20UITableViewCellStyle"
+- "CSo21UITableViewController"
+- "PSo21UITableViewDataSource"
+- "PSo19UITableViewDelegate"
 - !private "CSo11UITextField"
 - !private "PSo19UITextFieldDelegate"
 - !private "PSo11UITextInput"
@@ -937,7 +1100,7 @@ depends-nominal:
 - "CSo9UIToolbar"
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
-- !private "CSo16UIViewController"
+- "CSo16UIViewController"
 - !private "C9GPAerFood14ViewController"
 - !private "Ps14_ArrayProtocol"
 - "Ps37_DefaultCustomPlaygroundQuickLookable"
@@ -947,6 +1110,7 @@ depends-nominal:
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps26_ExpressibleByColorLiteral"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
@@ -963,4 +1127,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "73c0d67fb4c417f2af8abca757f02578"
+interface-hash: "a4e0504eeb071b7659140371650c2a7f"

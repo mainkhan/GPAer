@@ -11,7 +11,7 @@ import UIKit
 class GradeTableViewController: UITableViewController {
     
     // MARK: Properties
-    var year = Year()
+    var year: Year!
     
     @IBOutlet weak var navigationBar: UINavigationItem!
     @IBOutlet weak var addButton: UIBarButtonItem!
@@ -19,23 +19,16 @@ class GradeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(self.navigationController as Any)
-        
-        // load sample data
-        //loadSampleYear()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         // Lighter blue 80, 90.6, 95.7
-        self.view.backgroundColor = UIColor(red: 0.8, green: 0.906, blue: 0.957, alpha: 1)
+//        self.view.backgroundColor = UIColor(red: 0.8, green: 0.906, blue: 0.957, alpha: 1)
         
-        // Shiny Blue 4.7, 69, 100
-        self.view.backgroundColor = UIColor(red: 0.047, green: 0.69, blue: 1, alpha: 1)
-
+        // Pastel Blue 70.6, 85.1, 92.2
+        self.view.backgroundColor = UIColor(red: 0.706, green: 0.851, blue: 0.922, alpha: 1)
+        
         // Light Orange 100, 88.6, 75.3
 //        self.view.backgroundColor = UIColor(red: 1, green: 0.886, blue: 0.753, alpha: 1)
         
@@ -131,14 +124,30 @@ class GradeTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+/*    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        print(sender as Any)
+        
+    }*/
+    
+    // Do preperation before moving back to main GPAer view
+//    override func willMove(toParentViewController parent: UIViewController?) {
+//        parent as! ViewController
+//        
+//    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if self.navigationController?.topViewController != self {
+            // back button is tapped
+            print("back button tapped")
+            // pass back data to the parent VC
+        }
     }
-    */
 
 }

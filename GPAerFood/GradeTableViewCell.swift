@@ -8,16 +8,35 @@
 
 import UIKit
 
+protocol TableViewCellProtocol: class {
+    func didFinishTask(sender: UITableViewCell)
+}
+
+extension GradeTableViewController: TableViewCellProtocol {
+    func didFinishTask(sender: UITableViewCell) {
+        // do stuff like updating the UI
+    }
+}
+
 class GradeTableViewCell: UITableViewCell {
     
     // MARK: Properties
     @IBOutlet weak var gradeValueField: UITextField!
     @IBOutlet weak var weightControl: UISegmentedControl!
     @IBOutlet weak var fullHalfControl: UISegmentedControl!
+    
+    weak var delegate:TableViewCellProtocol?
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        // Set BG color to Pastel Orange 100, 88.6, 75.3
+        self.backgroundColor=UIColor(red: 1, green: 0.886, blue: 0.753, alpha: 1)
+        // Set segmented control colors to Darker Orange 100, 53.7, 0
+        weightControl.tintColor = UIColor(red: 1, green: 0.537, blue: 0, alpha: 1)
+        fullHalfControl.tintColor = UIColor(red: 1, green: 0.537, blue: 0, alpha: 1)
+        
+        // Set Delegate
         addDoneButtonOnKeyboard()
     }
 

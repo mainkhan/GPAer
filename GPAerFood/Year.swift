@@ -14,6 +14,7 @@ class Year: NSObject {
     
     var grades: [Grade]
     var gpa: Float?
+    var whatGrade: Int?
     
     // MARK: Initialization
     
@@ -33,6 +34,13 @@ class Year: NSObject {
     override init() {
         self.grades = [Grade]()
         self.gpa = nil
+        self.whatGrade = nil
+    }
+    
+    init(whatGrade: Int) {
+        self.grades = [Grade]()
+        self.gpa = nil
+        self.whatGrade = whatGrade
     }
     
     // Calculates the GPA based on the self.grades property

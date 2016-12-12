@@ -178,7 +178,7 @@ SWIFT_CLASS("_TtC9GPAerFood18GradeTableViewCell")
 
 SWIFT_CLASS("_TtC9GPAerFood24GradeTableViewController")
 @interface GradeTableViewController : UITableViewController
-@property (nonatomic, strong) Year * _Nonnull year;
+@property (nonatomic, strong) Year * _Null_unspecified year;
 @property (nonatomic, weak) IBOutlet UINavigationItem * _Null_unspecified navigationBar;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified addButton;
 - (void)viewDidLoad;
@@ -188,9 +188,15 @@ SWIFT_CLASS("_TtC9GPAerFood24GradeTableViewController")
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)viewWillDisappear:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface GradeTableViewController (SWIFT_EXTENSION(GPAerFood))
+- (void)didFinishTaskWithSender:(UITableViewCell * _Nonnull)sender;
 @end
 
 @class UIStoryboardSegue;
@@ -204,6 +210,10 @@ SWIFT_CLASS("_TtC9GPAerFood14ViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified tenthGradeLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified eleventhGradeLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified twelfthGradeLabel;
+@property (nonatomic, strong) Year * _Nonnull ninth;
+@property (nonatomic, strong) Year * _Nonnull tenth;
+@property (nonatomic, strong) Year * _Nonnull eleventh;
+@property (nonatomic, strong) Year * _Nonnull twelfth;
 - (void)viewDidLoad;
 - (void)addDoneButtonOnKeyboard;
 - (void)doneButtonAction;
@@ -211,6 +221,7 @@ SWIFT_CLASS("_TtC9GPAerFood14ViewController")
 - (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (IBAction)unwindToMealListWithSender:(UIStoryboardSegue * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -221,6 +232,7 @@ SWIFT_CLASS("_TtC9GPAerFood4Year")
 @property (nonatomic, copy) NSArray<Grade *> * _Nonnull grades;
 - (nullable instancetype)initWithGrades:(NSArray<Grade *> * _Nonnull)grades OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithWhatGrade:(NSInteger)whatGrade OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #pragma clang diagnostic pop

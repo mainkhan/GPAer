@@ -7,39 +7,41 @@ provides-member:
 - ["C9GPAerFood24GradeTableViewController", ""]
 provides-dynamic-lookup:
 - "numberOfSections"
-- "tableView"
-- "tableView"
 - "navigationBar"
-- "addGrade"
-- "viewDidLoad"
-- "addButton"
+- "didReceiveMemoryWarning"
 - "loadSampleYear"
 - "year"
-- "didReceiveMemoryWarning"
+- "viewDidLoad"
+- "addButton"
+- "addGrade"
+- "tableView"
+- "tableView"
+- "viewWillDisappear"
 depends-top-level:
-- "UITableViewCell"
-- "CastingPrecedence"
-- "UINavigationItem"
-- "AssignmentPrecedence"
-- "GradeTableViewController"
-- !private "Grade"
-- !private "-"
-- "Year"
-- "UITableViewController"
-- "Int"
-- !private "UIColor"
-- !private "Array"
-- "UIBarButtonItem"
-- !private "GradeTableViewCell"
 - "IndexPath"
 - !private "StringLiteralType"
-- "UITableView"
+- !private "Array"
+- "UITableViewController"
+- "UITableViewCell"
+- !private "-"
+- !private "GradeTableViewCell"
+- "Year"
 - !private "print"
+- "UITableView"
+- "Int"
+- !private "!="
+- "UIBarButtonItem"
+- "GradeTableViewController"
+- !private "Grade"
+- "Bool"
+- "UINavigationItem"
+- "CastingPrecedence"
+- !private "UIColor"
+- "AssignmentPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "Grade"]
 - !private ["Ps9AnyObject", "IndexPath"]
 - !private ["Ps9AnyObject", "UIColor"]
-- ["Ps9AnyObject", "Year"]
 - ["Ps9AnyObject", "addButton"]
 - ["Ps9AnyObject", "addGrade"]
 - !private ["Ps9AnyObject", "backgroundColor"]
@@ -53,7 +55,7 @@ depends-member:
 - !private ["Ps9AnyObject", "grade"]
 - !private ["Ps9AnyObject", "gradeValueField"]
 - !private ["Ps9AnyObject", "grades"]
-- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "insertRows"]
 - !private ["Ps9AnyObject", "isHalfCredit"]
 - ["Ps9AnyObject", "loadSampleYear"]
@@ -64,8 +66,10 @@ depends-member:
 - !private ["Ps9AnyObject", "selectedSegmentIndex"]
 - ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "topViewController"]
 - !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", "viewWillDisappear"]
 - !private ["Ps9AnyObject", "weight"]
 - !private ["Ps9AnyObject", "weightControl"]
 - ["Ps9AnyObject", "year"]
@@ -113,6 +117,7 @@ depends-member:
 - !private ["Ps17BitwiseOperations", "IntegerLiteralType"]
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "_DisabledRangeIndex"]
+- !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "backgroundColor"]
 - !private ["PSo15CALayerDelegate", "becomeFirstResponder"]
@@ -137,7 +142,6 @@ depends-member:
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "SubSequence"]
 - !private ["Ps7CVarArg", "UIColor"]
-- ["Ps7CVarArg", "Year"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "_Element"]
 - ["Ps7CVarArg", "addButton"]
@@ -155,7 +159,7 @@ depends-member:
 - !private ["Ps7CVarArg", "grade"]
 - !private ["Ps7CVarArg", "gradeValueField"]
 - !private ["Ps7CVarArg", "grades"]
-- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "insertRows"]
 - !private ["Ps7CVarArg", "isHalfCredit"]
 - ["Ps7CVarArg", "loadSampleYear"]
@@ -167,8 +171,10 @@ depends-member:
 - !private ["Ps7CVarArg", "subscript"]
 - ["Ps7CVarArg", "tableView"]
 - !private ["Ps7CVarArg", "text"]
+- !private ["Ps7CVarArg", "topViewController"]
 - !private ["Ps7CVarArg", "view"]
 - ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", "viewWillDisappear"]
 - !private ["Ps7CVarArg", "weight"]
 - !private ["Ps7CVarArg", "weightControl"]
 - ["Ps7CVarArg", "year"]
@@ -199,7 +205,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Iterator"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
-- ["Ps28CustomDebugStringConvertible", "Year"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - ["Ps28CustomDebugStringConvertible", "addButton"]
 - ["Ps28CustomDebugStringConvertible", "addGrade"]
@@ -216,7 +221,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "grade"]
 - !private ["Ps28CustomDebugStringConvertible", "gradeValueField"]
 - !private ["Ps28CustomDebugStringConvertible", "grades"]
-- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "insertRows"]
 - !private ["Ps28CustomDebugStringConvertible", "isHalfCredit"]
 - ["Ps28CustomDebugStringConvertible", "loadSampleYear"]
@@ -229,8 +234,10 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "tableView"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "topViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", "viewWillDisappear"]
 - !private ["Ps28CustomDebugStringConvertible", "weight"]
 - !private ["Ps28CustomDebugStringConvertible", "weightControl"]
 - ["Ps28CustomDebugStringConvertible", "year"]
@@ -238,6 +245,7 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "IntegerLiteralType"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_DisabledRangeIndex"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "Element"]
 - !private ["Ps17CustomReflectable", "Index"]
@@ -248,6 +256,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "SubSequence"]
 - !private ["Ps17CustomReflectable", "_DisabledRangeIndex"]
 - !private ["Ps17CustomReflectable", "_Element"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "append"]
 - !private ["Ps17CustomReflectable", "count"]
 - !private ["Ps17CustomReflectable", "init"]
@@ -263,9 +272,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
-- ["Ps23CustomStringConvertible", "Year"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - ["Ps23CustomStringConvertible", "addButton"]
 - ["Ps23CustomStringConvertible", "addGrade"]
 - !private ["Ps23CustomStringConvertible", "append"]
@@ -281,7 +290,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "grade"]
 - !private ["Ps23CustomStringConvertible", "gradeValueField"]
 - !private ["Ps23CustomStringConvertible", "grades"]
-- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "insertRows"]
 - !private ["Ps23CustomStringConvertible", "isHalfCredit"]
 - ["Ps23CustomStringConvertible", "loadSampleYear"]
@@ -294,8 +303,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "tableView"]
 - !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "topViewController"]
 - !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", "viewWillDisappear"]
 - !private ["Ps23CustomStringConvertible", "weight"]
 - !private ["Ps23CustomStringConvertible", "weightControl"]
 - ["Ps23CustomStringConvertible", "year"]
@@ -316,8 +327,8 @@ depends-member:
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "UIColor"]
-- ["Ps9Equatable", "Year"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "addButton"]
 - ["Ps9Equatable", "addGrade"]
 - !private ["Ps9Equatable", "automatic"]
@@ -332,7 +343,7 @@ depends-member:
 - !private ["Ps9Equatable", "grade"]
 - !private ["Ps9Equatable", "gradeValueField"]
 - !private ["Ps9Equatable", "grades"]
-- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "insertRows"]
 - !private ["Ps9Equatable", "isHalfCredit"]
 - ["Ps9Equatable", "loadSampleYear"]
@@ -344,8 +355,10 @@ depends-member:
 - !private ["Ps9Equatable", "selectedSegmentIndex"]
 - ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "topViewController"]
 - !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", "viewWillDisappear"]
 - !private ["Ps9Equatable", "weight"]
 - !private ["Ps9Equatable", "weightControl"]
 - ["Ps9Equatable", "year"]
@@ -361,6 +374,7 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "init"]
 - !private ["Ps25ExpressibleByArrayLiteral", "row"]
 - !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
@@ -378,6 +392,7 @@ depends-member:
 - !private ["C9GPAerFood18GradeTableViewCell", "fullHalfControl"]
 - !private ["C9GPAerFood18GradeTableViewCell", "gradeValueField"]
 - !private ["C9GPAerFood18GradeTableViewCell", "weightControl"]
+- ["C9GPAerFood24GradeTableViewController", "Bool"]
 - !private ["C9GPAerFood24GradeTableViewController", "Grade"]
 - !private ["C9GPAerFood24GradeTableViewController", "GradeTableViewCell"]
 - ["C9GPAerFood24GradeTableViewController", "IndexPath"]
@@ -401,14 +416,15 @@ depends-member:
 - ["C9GPAerFood24GradeTableViewController", "tableView"]
 - !private ["C9GPAerFood24GradeTableViewController", "view"]
 - ["C9GPAerFood24GradeTableViewController", "viewDidLoad"]
+- ["C9GPAerFood24GradeTableViewController", "viewWillDisappear"]
 - ["C9GPAerFood24GradeTableViewController", "year"]
 - !private ["Ps8Hashable", "Grade"]
 - !private ["Ps8Hashable", "IndexPath"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "UIColor"]
-- ["Ps8Hashable", "Year"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "addButton"]
 - ["Ps8Hashable", "addGrade"]
 - !private ["Ps8Hashable", "automatic"]
@@ -423,7 +439,7 @@ depends-member:
 - !private ["Ps8Hashable", "grade"]
 - !private ["Ps8Hashable", "gradeValueField"]
 - !private ["Ps8Hashable", "grades"]
-- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "insertRows"]
 - !private ["Ps8Hashable", "isHalfCredit"]
 - ["Ps8Hashable", "loadSampleYear"]
@@ -435,8 +451,10 @@ depends-member:
 - !private ["Ps8Hashable", "selectedSegmentIndex"]
 - ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "topViewController"]
 - !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", "viewWillDisappear"]
 - !private ["Ps8Hashable", "weight"]
 - !private ["Ps8Hashable", "weightControl"]
 - ["Ps8Hashable", "year"]
@@ -485,6 +503,7 @@ depends-member:
 - !private ["Ps17IntegerArithmetic", "Stride"]
 - !private ["Ps17IntegerArithmetic", "_DisabledRangeIndex"]
 - !private ["Ps16IteratorProtocol", "Element"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "IntegerLiteralType"]
 - !private ["Ps10MirrorPath", "Stride"]
@@ -516,7 +535,6 @@ depends-member:
 - !private ["PSo8NSCoding", "Grade"]
 - !private ["PSo8NSCoding", "IndexPath"]
 - !private ["PSo8NSCoding", "UIColor"]
-- ["PSo8NSCoding", "Year"]
 - ["PSo8NSCoding", "addButton"]
 - ["PSo8NSCoding", "addGrade"]
 - !private ["PSo8NSCoding", "backgroundColor"]
@@ -538,8 +556,10 @@ depends-member:
 - !private ["PSo8NSCoding", "selectedSegmentIndex"]
 - ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "topViewController"]
 - !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", "viewWillDisappear"]
 - !private ["PSo8NSCoding", "weightControl"]
 - ["PSo8NSCoding", "year"]
 - ["PSo8NSCoding", ""]
@@ -547,7 +567,6 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "Grade"]
 - !private ["PSo26NSExtensionRequestHandling", "IndexPath"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
-- ["PSo26NSExtensionRequestHandling", "Year"]
 - ["PSo26NSExtensionRequestHandling", "addButton"]
 - ["PSo26NSExtensionRequestHandling", "addGrade"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
@@ -558,11 +577,14 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "numberOfSections"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
+- !private ["PSo26NSExtensionRequestHandling", "topViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", "viewWillDisappear"]
 - ["PSo26NSExtensionRequestHandling", "year"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "Grade"]
 - !private ["CSo8NSObject", "GradeTableViewCell"]
 - ["CSo8NSObject", "IndexPath"]
@@ -597,15 +619,16 @@ depends-member:
 - !private ["CSo8NSObject", "selectedSegmentIndex"]
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "topViewController"]
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
+- ["CSo8NSObject", "viewWillDisappear"]
 - !private ["CSo8NSObject", "weight"]
 - !private ["CSo8NSObject", "weightControl"]
 - ["CSo8NSObject", "year"]
 - !private ["PSo16NSObjectProtocol", "Grade"]
 - !private ["PSo16NSObjectProtocol", "IndexPath"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
-- ["PSo16NSObjectProtocol", "Year"]
 - ["PSo16NSObjectProtocol", "addButton"]
 - ["PSo16NSObjectProtocol", "addGrade"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
@@ -619,7 +642,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "grade"]
 - !private ["PSo16NSObjectProtocol", "gradeValueField"]
 - !private ["PSo16NSObjectProtocol", "grades"]
-- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "insertRows"]
 - !private ["PSo16NSObjectProtocol", "isHalfCredit"]
 - ["PSo16NSObjectProtocol", "loadSampleYear"]
@@ -630,8 +653,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "selectedSegmentIndex"]
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "topViewController"]
 - !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "viewWillDisappear"]
 - !private ["PSo16NSObjectProtocol", "weight"]
 - !private ["PSo16NSObjectProtocol", "weightControl"]
 - ["PSo16NSObjectProtocol", "year"]
@@ -717,6 +742,14 @@ depends-member:
 - !private ["Ps10Strideable", "_DisabledRangeIndex"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
+- !private ["P9GPAerFood21TableViewCellProtocol", "Grade"]
+- !private ["P9GPAerFood21TableViewCellProtocol", "IndexPath"]
+- !private ["P9GPAerFood21TableViewCellProtocol", "UIColor"]
+- !private ["P9GPAerFood21TableViewCellProtocol", "navigationController"]
+- !private ["P9GPAerFood21TableViewCellProtocol", "print"]
+- !private ["P9GPAerFood21TableViewCellProtocol", "tableView"]
+- !private ["P9GPAerFood21TableViewCellProtocol", "view"]
+- !private ["P9GPAerFood21TableViewCellProtocol", "year"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
@@ -746,7 +779,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "Grade"]
 - !private ["PSo21UIAppearanceContainer", "IndexPath"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
-- ["PSo21UIAppearanceContainer", "Year"]
 - ["PSo21UIAppearanceContainer", "addButton"]
 - ["PSo21UIAppearanceContainer", "addGrade"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
@@ -768,8 +800,10 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "selectedSegmentIndex"]
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "topViewController"]
 - !private ["PSo21UIAppearanceContainer", "view"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", "viewWillDisappear"]
 - !private ["PSo21UIAppearanceContainer", "weightControl"]
 - ["PSo21UIAppearanceContainer", "year"]
 - ["PSo21UIAppearanceContainer", ""]
@@ -778,7 +812,6 @@ depends-member:
 - !private ["PSo18UIContentContainer", "Grade"]
 - !private ["PSo18UIContentContainer", "IndexPath"]
 - !private ["PSo18UIContentContainer", "UIColor"]
-- ["PSo18UIContentContainer", "Year"]
 - ["PSo18UIContentContainer", "addButton"]
 - ["PSo18UIContentContainer", "addGrade"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
@@ -789,8 +822,10 @@ depends-member:
 - ["PSo18UIContentContainer", "numberOfSections"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "tableView"]
+- !private ["PSo18UIContentContainer", "topViewController"]
 - !private ["PSo18UIContentContainer", "view"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", "viewWillDisappear"]
 - ["PSo18UIContentContainer", "year"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
@@ -823,7 +858,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "Grade"]
 - !private ["PSo18UIFocusEnvironment", "IndexPath"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
-- ["PSo18UIFocusEnvironment", "Year"]
 - ["PSo18UIFocusEnvironment", "addButton"]
 - ["PSo18UIFocusEnvironment", "addGrade"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
@@ -845,8 +879,10 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "selectedSegmentIndex"]
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "topViewController"]
 - !private ["PSo18UIFocusEnvironment", "view"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", "viewWillDisappear"]
 - !private ["PSo18UIFocusEnvironment", "weightControl"]
 - ["PSo18UIFocusEnvironment", "year"]
 - ["PSo18UIFocusEnvironment", ""]
@@ -867,6 +903,9 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "gradeValueField"]
 - !private ["PSo27UIGestureRecognizerDelegate", "weightControl"]
 - !private ["PSo10UIKeyInput", "text"]
+- ["CSo22UINavigationController", "deinit"]
+- !private ["CSo22UINavigationController", "topViewController"]
+- ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "Grade"]
 - !private ["CSo11UIResponder", "GradeTableViewCell"]
 - ["CSo11UIResponder", "IndexPath"]
@@ -898,14 +937,15 @@ depends-member:
 - !private ["CSo11UIResponder", "selectedSegmentIndex"]
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "topViewController"]
 - !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- ["CSo11UIResponder", "viewWillDisappear"]
 - !private ["CSo11UIResponder", "weightControl"]
 - ["CSo11UIResponder", "year"]
 - !private ["PSo30UIResponderStandardEditActions", "Grade"]
 - !private ["PSo30UIResponderStandardEditActions", "IndexPath"]
 - !private ["PSo30UIResponderStandardEditActions", "UIColor"]
-- ["PSo30UIResponderStandardEditActions", "Year"]
 - ["PSo30UIResponderStandardEditActions", "addButton"]
 - ["PSo30UIResponderStandardEditActions", "addGrade"]
 - !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
@@ -927,8 +967,10 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "selectedSegmentIndex"]
 - ["PSo30UIResponderStandardEditActions", "tableView"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
+- !private ["PSo30UIResponderStandardEditActions", "topViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "view"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", "viewWillDisappear"]
 - !private ["PSo30UIResponderStandardEditActions", "weightControl"]
 - ["PSo30UIResponderStandardEditActions", "year"]
 - ["PSo30UIResponderStandardEditActions", ""]
@@ -940,7 +982,6 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "Grade"]
 - !private ["PSo20UIScrollViewDelegate", "IndexPath"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
-- ["PSo20UIScrollViewDelegate", "Year"]
 - ["PSo20UIScrollViewDelegate", "addButton"]
 - ["PSo20UIScrollViewDelegate", "addGrade"]
 - ["PSo20UIScrollViewDelegate", "didReceiveMemoryWarning"]
@@ -953,13 +994,13 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "tableView"]
 - !private ["PSo20UIScrollViewDelegate", "view"]
 - ["PSo20UIScrollViewDelegate", "viewDidLoad"]
+- ["PSo20UIScrollViewDelegate", "viewWillDisappear"]
 - ["PSo20UIScrollViewDelegate", "year"]
 - ["PSo20UIScrollViewDelegate", ""]
 - !private ["CSo18UISegmentedControl", "selectedSegmentIndex"]
 - !private ["PSo16UIStateRestoring", "Grade"]
 - !private ["PSo16UIStateRestoring", "IndexPath"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
-- ["PSo16UIStateRestoring", "Year"]
 - ["PSo16UIStateRestoring", "addButton"]
 - ["PSo16UIStateRestoring", "addGrade"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
@@ -970,8 +1011,10 @@ depends-member:
 - ["PSo16UIStateRestoring", "numberOfSections"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "tableView"]
+- !private ["PSo16UIStateRestoring", "topViewController"]
 - !private ["PSo16UIStateRestoring", "view"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "viewWillDisappear"]
 - ["PSo16UIStateRestoring", "year"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo11UITableView", "beginUpdates"]
@@ -985,6 +1028,7 @@ depends-member:
 - !private ["CSo15UITableViewCell", "fullHalfControl"]
 - !private ["CSo15UITableViewCell", "gradeValueField"]
 - !private ["CSo15UITableViewCell", "weightControl"]
+- ["CSo21UITableViewController", "Bool"]
 - !private ["CSo21UITableViewController", "Grade"]
 - !private ["CSo21UITableViewController", "GradeTableViewCell"]
 - ["CSo21UITableViewController", "IndexPath"]
@@ -1008,12 +1052,12 @@ depends-member:
 - ["CSo21UITableViewController", "tableView"]
 - !private ["CSo21UITableViewController", "view"]
 - ["CSo21UITableViewController", "viewDidLoad"]
+- ["CSo21UITableViewController", "viewWillDisappear"]
 - ["CSo21UITableViewController", "year"]
 - ["CSo21UITableViewController", ""]
 - !private ["PSo21UITableViewDataSource", "Grade"]
 - !private ["PSo21UITableViewDataSource", "IndexPath"]
 - !private ["PSo21UITableViewDataSource", "UIColor"]
-- ["PSo21UITableViewDataSource", "Year"]
 - ["PSo21UITableViewDataSource", "addButton"]
 - ["PSo21UITableViewDataSource", "addGrade"]
 - ["PSo21UITableViewDataSource", "didReceiveMemoryWarning"]
@@ -1026,12 +1070,12 @@ depends-member:
 - ["PSo21UITableViewDataSource", "tableView"]
 - !private ["PSo21UITableViewDataSource", "view"]
 - ["PSo21UITableViewDataSource", "viewDidLoad"]
+- ["PSo21UITableViewDataSource", "viewWillDisappear"]
 - ["PSo21UITableViewDataSource", "year"]
 - ["PSo21UITableViewDataSource", ""]
 - !private ["PSo19UITableViewDelegate", "Grade"]
 - !private ["PSo19UITableViewDelegate", "IndexPath"]
 - !private ["PSo19UITableViewDelegate", "UIColor"]
-- ["PSo19UITableViewDelegate", "Year"]
 - ["PSo19UITableViewDelegate", "addButton"]
 - ["PSo19UITableViewDelegate", "addGrade"]
 - ["PSo19UITableViewDelegate", "didReceiveMemoryWarning"]
@@ -1044,6 +1088,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "tableView"]
 - !private ["PSo19UITableViewDelegate", "view"]
 - ["PSo19UITableViewDelegate", "viewDidLoad"]
+- ["PSo19UITableViewDelegate", "viewWillDisappear"]
 - ["PSo19UITableViewDelegate", "year"]
 - ["PSo19UITableViewDelegate", ""]
 - !private ["OSC23UITableViewRowAnimation", "automatic"]
@@ -1055,7 +1100,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "Grade"]
 - !private ["PSo18UITraitEnvironment", "IndexPath"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
-- ["PSo18UITraitEnvironment", "Year"]
 - ["PSo18UITraitEnvironment", "addButton"]
 - ["PSo18UITraitEnvironment", "addGrade"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
@@ -1077,8 +1121,10 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "selectedSegmentIndex"]
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "topViewController"]
 - !private ["PSo18UITraitEnvironment", "view"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", "viewWillDisappear"]
 - !private ["PSo18UITraitEnvironment", "weightControl"]
 - ["PSo18UITraitEnvironment", "year"]
 - ["PSo18UITraitEnvironment", ""]
@@ -1094,6 +1140,7 @@ depends-member:
 - !private ["CSo6UIView", "selectedSegmentIndex"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "weightControl"]
+- ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "Grade"]
 - !private ["CSo16UIViewController", "GradeTableViewCell"]
 - ["CSo16UIViewController", "IndexPath"]
@@ -1114,8 +1161,10 @@ depends-member:
 - ["CSo16UIViewController", "numberOfSections"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "tableView"]
+- !private ["CSo16UIViewController", "topViewController"]
 - !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", "viewWillDisappear"]
 - ["CSo16UIViewController", "year"]
 - !private ["Su", "deinit"]
 - !private ["Vs6UInt16", "deinit"]
@@ -1123,9 +1172,7 @@ depends-member:
 - !private ["Vs6UInt64", "deinit"]
 - !private ["Vs5UInt8", "deinit"]
 - !private ["Sc", "deinit"]
-- ["C9GPAerFood4Year", "deinit"]
 - !private ["C9GPAerFood4Year", "grades"]
-- ["C9GPAerFood4Year", "init"]
 - !private ["Ps14_ArrayProtocol", "Element"]
 - !private ["Ps14_ArrayProtocol", "Index"]
 - !private ["Ps14_ArrayProtocol", "IndexDistance"]
@@ -1156,6 +1203,7 @@ depends-member:
 - !private ["Ps24_DestructorSafeContainer", "append"]
 - !private ["Ps24_DestructorSafeContainer", "count"]
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "IntegerLiteralType"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
@@ -1170,8 +1218,8 @@ depends-member:
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
 - !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "UIColor"]
-- ["Ps9_Hashable", "Year"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - ["Ps9_Hashable", "addButton"]
 - ["Ps9_Hashable", "addGrade"]
 - !private ["Ps9_Hashable", "automatic"]
@@ -1186,7 +1234,7 @@ depends-member:
 - !private ["Ps9_Hashable", "grade"]
 - !private ["Ps9_Hashable", "gradeValueField"]
 - !private ["Ps9_Hashable", "grades"]
-- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "insertRows"]
 - !private ["Ps9_Hashable", "isHalfCredit"]
 - ["Ps9_Hashable", "loadSampleYear"]
@@ -1198,8 +1246,10 @@ depends-member:
 - !private ["Ps9_Hashable", "selectedSegmentIndex"]
 - ["Ps9_Hashable", "tableView"]
 - !private ["Ps9_Hashable", "text"]
+- !private ["Ps9_Hashable", "topViewController"]
 - !private ["Ps9_Hashable", "view"]
 - ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", "viewWillDisappear"]
 - !private ["Ps9_Hashable", "weight"]
 - !private ["Ps9_Hashable", "weightControl"]
 - ["Ps9_Hashable", "year"]
@@ -1222,6 +1272,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
 - !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
@@ -1256,6 +1307,7 @@ depends-nominal:
 - !private "Sd"
 - "Ps9Equatable"
 - !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
@@ -1306,6 +1358,7 @@ depends-nominal:
 - !private "Vs5Slice"
 - !private "Ps10Strideable"
 - "SS"
+- !private "P9GPAerFood21TableViewCellProtocol"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
 - !private "PSo29UIAccessibilityIdentification"
@@ -1321,6 +1374,7 @@ depends-nominal:
 - !private "PSo11UIFocusItem"
 - !private "PSo27UIGestureRecognizerDelegate"
 - !private "PSo10UIKeyInput"
+- "CSo22UINavigationController"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - !private "CSo12UIScrollView"
@@ -1346,10 +1400,11 @@ depends-nominal:
 - !private "Vs6UInt64"
 - !private "Vs5UInt8"
 - !private "Sc"
-- "C9GPAerFood4Year"
+- !private "C9GPAerFood4Year"
 - !private "Ps14_ArrayProtocol"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
 - !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
@@ -1376,4 +1431,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "4545498d2c428ec4f0c529e76003e80d"
+interface-hash: "492d0e02c018b875c16797913f49e9aa"

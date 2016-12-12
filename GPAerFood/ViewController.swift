@@ -18,8 +18,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var eleventhGradeLabel: UILabel!
     @IBOutlet weak var twelfthGradeLabel: UILabel!
     
-    // MARK: Data
-    // put an 4 year objects here
+    // MARK: Data (4 years)
+    var ninth = Year(whatGrade: 9)
+    var tenth = Year(whatGrade: 10)
+    var eleventh = Year(whatGrade: 11)
+    var twelfth = Year(whatGrade: 12)
     
 //    let gradientLayer = CAGradientLayer()
     
@@ -119,26 +122,49 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "NinthSegue") {
             let gradeTableVC = segue.destination as! GradeTableViewController
+            
+            // change the text of the title
             gradeTableVC.navigationBar.title = ninthGradeLabel.text
-//            gradeTableVC.year
-//            self.navigationController?.pushViewController(gradeTableVC, animated: true)
+
+            // pass data on to the next view
+            gradeTableVC.year = ninth
             
         }
         else if (segue.identifier == "TenthSegue") {
             let gradeTableVC = segue.destination as! GradeTableViewController
+            
+            // change the text of the title
             gradeTableVC.navigationBar.title = tenthGradeLabel.text
-//            self.navigationController?.pushViewController(gradeTableVC, animated: true)
-//            self.navigationController?.setNavigationBarHidden(false, animated: true)
-            print(segue.source as Any)
+            
+            // pass data on to the next view
+            gradeTableVC.year = tenth
+
         }
         else if (segue.identifier == "EleventhSegue") {
             let gradeTableVC = segue.destination as! GradeTableViewController
+            
+            // change the text of the title
             gradeTableVC.navigationBar.title = eleventhGradeLabel.text
-//            self.navigationController?.pushViewController(gradeTableVC, animated: true)
+            
+            // pass data on to the next view
+            gradeTableVC.year = eleventh
         }
         else if (segue.identifier == "TwelfthSegue") {
             let gradeTableVC = segue.destination as! GradeTableViewController
+            
+            // change the text of the title
             gradeTableVC.navigationBar.title = twelfthGradeLabel.text
+            
+            // pass data on to the next view
+            gradeTableVC.year = twelfth
+        }
+    }
+    
+    @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
+        print ("code is executed")
+        if let sourceViewController = sender.source as?
+            GradeTableViewController, let tempYear = sourceViewController.year {
+            print (tempYear.whatGrade as Any, "th grade was the sender")
         }
     }
 }
