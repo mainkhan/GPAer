@@ -47,25 +47,30 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Pastel Blue 70.6, 85.1, 92.2
         self.view.backgroundColor = UIColor(red: 0.706, green: 0.851, blue: 0.922, alpha: 1)
         
+        // Change the GPA values of each grade IF there are grades inputted
+        print("number of ninth grades", ninth.grades.count)
+        if (ninth.grades.count > 0) {
+            addGpatoLabel(year: ninth, textLabel: ninthGradeLabel)
+            print("changed the label")
+        }
         
-//        // 2
-//        gradientLayer.frame = self.view.bounds
-//        
-//        // 3
-//        let color1 = UIColor.yellow.cgColor as CGColor
-//        let color2 = UIColor(red: 1.0, green: 0, blue: 0, alpha: 1.0).cgColor as CGColor
-//        let color3 = UIColor.clear.cgColor as CGColor
-//        let color4 = UIColor(white: 0.0, alpha: 0.2).cgColor as CGColor
-//        gradientLayer.colors = [color3, color4]
-//        
-//        // 4
-//        gradientLayer.locations = [0.0, 0.5]
-//        
-//        gradientLayer.startPoint = CGPoint(x: 1, y: 0)
-//        gradientLayer.endPoint = CGPoint(x: 0, y: 1)
-//        
-//        // 5
-//        self.view.layer.addSublayer(gradientLayer)
+        if (tenth.grades.count > 0) {
+            addGpatoLabel(year: tenth, textLabel: tenthGradeLabel)
+        }
+        
+        if (eleventh.grades.count > 0) {
+            addGpatoLabel(year: eleventh, textLabel: eleventhGradeLabel)
+        }
+        
+        if (twelfth.grades.count > 0) {
+            addGpatoLabel(year: twelfth, textLabel: twelfthGradeLabel)
+        }
+
+    }
+
+    func addGpatoLabel(year: Year, textLabel: UILabel) {
+        let gpa = year.calculateGpa()
+        textLabel.text = textLabel.text! + "\t \(gpa)"
     }
     
     // Function to add a done button on the LPG Keyboard
@@ -102,10 +107,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if (textField.tag == 100) {
-            print(schoolTextField.text!)
+//            print(schoolTextField.text!)
         }
         else if ( textField.tag == 101) {
-            print(lpgTextField.text!)
+//            print(lpgTextField.text!)
         }
     }
     
@@ -160,12 +165,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
-        print ("code is executed")
-        if let sourceViewController = sender.source as?
-            GradeTableViewController, let tempYear = sourceViewController.year {
-            print (tempYear.whatGrade as Any, "th grade was the sender")
-        }
-    }
+//    @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
+//        print ("code is executed")
+//        if let sourceViewController = sender.source as?
+//            GradeTableViewController, let tempYear = sourceViewController.year {
+//            print (tempYear.whatGrade as Any, "th grade was the sender")
+//        }
+//    }
 }
 

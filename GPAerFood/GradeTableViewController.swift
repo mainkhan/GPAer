@@ -37,6 +37,11 @@ class GradeTableViewController: UITableViewController {
 
     }
     
+    // Function to dismiss keyboards when anything outside the keyboard is touched
+    @IBAction func dismissKeyboard() {
+        self.tableView.endEditing(true)
+    }
+    
     @IBAction func addGrade(_ sender: UIBarButtonItem) {
         year.grades.append(Grade(grade: 0))
         tableView.beginUpdates()
@@ -45,23 +50,12 @@ class GradeTableViewController: UITableViewController {
         tableView.endUpdates()
         tableView.cellForRow(at: IndexPath(row: year.grades.count-1, section: 0))?.becomeFirstResponder()
     }
+
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//        // Dispose of any resources that can be recreated.
+//    }
     
-    func loadSampleYear () {
-        let grade0 = Grade(grade: 94)
-        let grade1 = Grade(grade: 70)
-        let grade2 = Grade(grade: 85)
-        let grade3 = Grade(grade: 101)
-        year.grades.append(grade0)
-        year.grades.append(grade1)
-        year.grades.append(grade2)
-        year.grades.append(grade3)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -96,18 +90,18 @@ class GradeTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
+            year.grades.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-            year.grades.append(Grade())
-        }    
+        }
     }
-    */
+ 
 
     /*
     // Override to support rearranging the table view.
@@ -143,10 +137,27 @@ class GradeTableViewController: UITableViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        // back button is tapped, save all printed data to year property
         if self.navigationController?.topViewController != self {
-            // back button is tapped
-            print("back button tapped")
-            // pass back data to the parent VC
+            let visibleIndexPaths = tableView.indexPathsForVisibleRows
+            
+            // loop through all cells in view and change the value of the corresponding grade
+            for (index, element) in (visibleIndexPaths?.enumerated())! {
+                let cell = tableView.cellForRow(at: element) as! GradeTableViewCell
+                
+                year.grades[index].grade = Float(cell.gradeValueField.text!)!
+                year.grades[index].isHalfCredit = cell.fullHalfControl.selectedSegmentIndex
+                year.grades[index].weight = cell.weightControl.selectedSegmentIndex
+            }
+            
+            // debug: print the grades and their properties
+//            print("printing grades")
+//            for (index, element) in year.grades.enumerated() {
+//                print("Grade \(index): \(element.grade)")
+//                print("Half Credit \(index): \(element.isHalfCredit)")
+//                print("Weight \(index): \(element.weight)")
+//            }
+//            print("GPA: ",year.calculateGpa())
         }
     }
 
