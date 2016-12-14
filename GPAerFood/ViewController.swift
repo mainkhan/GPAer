@@ -17,14 +17,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var tenthGradeLabel: UILabel!
     @IBOutlet weak var eleventhGradeLabel: UILabel!
     @IBOutlet weak var twelfthGradeLabel: UILabel!
+    @IBOutlet weak var cumulativeGpa: UILabel!
+    @IBOutlet weak var innerView: UIView!
+    @IBOutlet weak var bottomView: UIView!
     
     // MARK: Data (4 years)
     var ninth = Year(whatGrade: 9)
     var tenth = Year(whatGrade: 10)
     var eleventh = Year(whatGrade: 11)
     var twelfth = Year(whatGrade: 12)
-    
-//    let gradientLayer = CAGradientLayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,38 +40,406 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Set tags to differentiate text fields
         schoolTextField.tag = 100
         lpgTextField.tag = 101
+    
         
-        // Gradient Setup
-        // Shiny Blue 4.7, 69, 100
-//        self.view.backgroundColor = UIColor(red: 0.047, green: 0.69, blue: 1, alpha: 1)
-        
-        // Pastel Blue 70.6, 85.1, 92.2
+        // Pastel Blue for top views 70.6, 85.1, 92.2
         self.view.backgroundColor = UIColor(red: 0.706, green: 0.851, blue: 0.922, alpha: 1)
+        self.innerView.backgroundColor = UIColor(red: 0.706, green: 0.851, blue: 0.922, alpha: 1)
         
+        // Pastel Orange for bottom view 100, 95.3, 90.2
+        self.bottomView.backgroundColor = UIColor(red: 1, green: 0.953, blue: 0.902, alpha: 1)
+        
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         // Change the GPA values of each grade IF there are grades inputted
-        print("number of ninth grades", ninth.grades.count)
+        updateGpaLabels()
+    }
+    
+    func updateGpaLabels() {
+        let lpg = getLowestPassingGrade()
+        
+        var cumulativeSum = Float(0.0)
+        var numberOfYears = 0
         if (ninth.grades.count > 0) {
-            addGpatoLabel(year: ninth, textLabel: ninthGradeLabel)
-            print("changed the label")
+            let gpa = ninth.calculateGpa()
+            let roundedGpa = Int(round(gpa!))
+            let scaled = getScaledGpa(gpa: roundedGpa, lpg: lpg)
+            
+            ninthGradeLabel.text = "9th Grade:\t\(roundedGpa) = \(scaled)"
+            cumulativeSum = cumulativeSum + scaled
+            numberOfYears = numberOfYears + 1
         }
         
         if (tenth.grades.count > 0) {
-            addGpatoLabel(year: tenth, textLabel: tenthGradeLabel)
+            let gpa = tenth.calculateGpa()
+            let roundedGpa = Int(round(gpa!))
+            let scaled = getScaledGpa(gpa: roundedGpa, lpg: lpg)
+            
+            tenthGradeLabel.text = "10th Grade:\t\(roundedGpa) = \(scaled)"
+            cumulativeSum = cumulativeSum + scaled
+            numberOfYears = numberOfYears + 1
         }
         
         if (eleventh.grades.count > 0) {
-            addGpatoLabel(year: eleventh, textLabel: eleventhGradeLabel)
+            let gpa = eleventh.calculateGpa()
+            let roundedGpa = Int(round(gpa!))
+            let scaled = getScaledGpa(gpa: roundedGpa, lpg: lpg)
+            
+            eleventhGradeLabel.text = "11th Grade:\t\(roundedGpa) = \(scaled)"
+            cumulativeSum = cumulativeSum + scaled
+            numberOfYears = numberOfYears + 1
         }
         
         if (twelfth.grades.count > 0) {
-            addGpatoLabel(year: twelfth, textLabel: twelfthGradeLabel)
+            let gpa = twelfth.calculateGpa()
+            let roundedGpa = Int(round(gpa!))
+            let scaled = getScaledGpa(gpa: roundedGpa, lpg: lpg)
+            
+            twelfthGradeLabel.text = "12th Grade:\t\(roundedGpa) = \(scaled)"
+            cumulativeSum = cumulativeSum + scaled
+            numberOfYears = numberOfYears + 1
         }
-
+        
+        if (numberOfYears > 0) {
+            var outputGpa = cumulativeSum / Float(numberOfYears)
+            outputGpa = round(10 * outputGpa) / 10
+            cumulativeGpa.text = String(outputGpa)
+        }
+        else {
+            cumulativeGpa.text = String(0.0)
+        }
     }
-
-    func addGpatoLabel(year: Year, textLabel: UILabel) {
-        let gpa = year.calculateGpa()
-        textLabel.text = textLabel.text! + "\t \(gpa)"
+    
+    func getLowestPassingGrade () -> Int {
+        if lpgTextField.text == "60" {
+            return 60
+            
+        }
+        else if lpgTextField.text == "70" {
+            return 70
+        }
+        else  {
+            // default LPG of 65
+            return 65
+        }
+    }
+    
+    func getScaledGpa(gpa: Int, lpg: Int) -> Float {
+        if lpg == 60 {
+            if gpa >= 99 {
+                return 4.3
+            }
+            else if (gpa == 98 || gpa == 97) {
+                return 4.2
+            }
+            else if (gpa == 96 || gpa == 95) {
+                return 4.1
+            }
+            else if (gpa == 94 || gpa == 93) {
+                return 4.0
+            }
+            else if (gpa == 92) {
+                return 3.9
+            }
+            else if (gpa == 91) {
+                return 3.8
+            }
+            else if (gpa == 90) {
+                return 3.7
+            }
+            else if (gpa == 89) {
+                return 3.6
+            }
+            else if (gpa == 88) {
+                return 3.5
+            }
+            else if (gpa == 87) {
+                return 3.4
+            }
+            else if (gpa == 86) {
+                return 3.3
+            }
+            else if (gpa == 85) {
+                return 3.2
+            }
+            else if (gpa == 84) {
+                return 3.1
+            }
+            else if (gpa == 83) {
+                return 3.0
+            }
+            else if (gpa == 82) {
+                return 2.9
+            }
+            else if (gpa == 81) {
+                return 2.8
+            }
+            else if (gpa == 80) {
+                return 2.7
+            }
+            else if (gpa == 79) {
+                return 2.6
+            }
+            else if (gpa == 78) {
+                return 2.5
+            }
+            else if (gpa == 77) {
+                return 2.4
+            }
+            else if (gpa == 76) {
+                return 2.3
+            }
+            else if (gpa == 75) {
+                return 2.2
+            }
+            else if (gpa == 74) {
+                return 2.1
+            }
+            else if (gpa == 73) {
+                return 2.0
+            }
+            else if (gpa == 72) {
+                return 1.9
+            }
+            else if (gpa == 71) {
+                return 1.8
+            }
+            else if (gpa == 70) {
+                return 1.7
+            }
+            else if (gpa == 69) {
+                return 1.6
+            }
+            else if (gpa == 68) {
+                return 1.5
+            }
+            else if (gpa == 67) {
+                return 1.4
+            }
+            else if (gpa == 66) {
+                return 1.3
+            }
+            else if (gpa == 65) {
+                return 1.2
+            }
+            else if (gpa == 64) {
+                return 1.1
+            }
+            else if (gpa == 63) {
+                return 1.0
+            }
+            else if (gpa == 62) {
+                return 0.9
+            }
+            else if (gpa == 61) {
+                return 0.8
+            }
+            else if (gpa == 60) {
+                return 0.7
+            }
+            else {
+                return 0.0
+            }
+            
+        }
+        else if lpg == 65 {
+            if gpa >= 99 {
+                return 4.3
+            }
+            else if (gpa == 98 || gpa == 97) {
+                return 4.2
+            }
+            else if (gpa == 96) {
+                return 4.1
+            }
+            else if (gpa == 95 || gpa == 94) {
+                return 4.0
+            }
+            else if (gpa == 93) {
+                return 3.9
+            }
+            else if (gpa == 92) {
+                return 3.8
+            }
+            else if (gpa == 91) {
+                return 3.7
+            }
+            else if (gpa == 90) {
+                return 3.6
+            }
+            else if (gpa == 89) {
+                return 3.4
+            }
+            else if (gpa == 88) {
+                return 3.3
+            }
+            else if (gpa == 87) {
+                return 3.2
+            }
+            else if (gpa == 86) {
+                return 3.1
+            }
+            else if (gpa == 85) {
+                return 3.0
+            }
+            else if (gpa == 84) {
+                return 2.9
+            }
+            else if (gpa == 83) {
+                return 2.8
+            }
+            else if (gpa == 82) {
+                return 2.7
+            }
+            else if (gpa == 81) {
+                return 2.6
+            }
+            else if (gpa == 80) {
+                return 2.4
+            }
+            else if (gpa == 79) {
+                return 2.3
+            }
+            else if (gpa == 78) {
+                return 2.2
+            }
+            else if (gpa == 77) {
+                return 2.1
+            }
+            else if (gpa == 76) {
+                return 2.0
+            }
+            else if (gpa == 75) {
+                return 1.9
+            }
+            else if (gpa == 74) {
+                return 1.8
+            }
+            else if (gpa == 73) {
+                return 1.7
+            }
+            else if (gpa == 72) {
+                return 1.6
+            }
+            else if (gpa == 71) {
+                return 1.4
+            }
+            else if (gpa == 70) {
+                return 1.3
+            }
+            else if (gpa == 69) {
+                return 1.2
+            }
+            else if (gpa == 68) {
+                return 1.1
+            }
+            else if (gpa == 67) {
+                return 0.9
+            }
+            else if (gpa == 66) {
+                return 0.8
+            }
+            else if (gpa == 65) {
+                return 0.7
+            }
+            else {
+                return 0.0
+            }
+        }
+        else {
+            if gpa >= 100 {
+                return 4.3
+            }
+            else if (gpa == 99) {
+                return 4.2
+            }
+            else if (gpa == 98) {
+                return 4.1
+            }
+            else if (gpa == 97 || gpa == 96) {
+                return 4.0
+            }
+            else if (gpa == 95) {
+                return 3.9
+            }
+            else if (gpa == 94 || gpa == 93) {
+                return 3.7
+            }
+            else if (gpa == 92) {
+                return 3.5
+            }
+            else if (gpa == 91) {
+                return 3.4
+            }
+            else if (gpa == 90) {
+                return 3.3
+            }
+            else if (gpa == 89) {
+                return 3.2
+            }
+            else if (gpa == 88) {
+                return 3.0
+            }
+            else if (gpa == 87) {
+                return 2.9
+            }
+            else if (gpa == 86) {
+                return 2.8
+            }
+            else if (gpa == 85) {
+                return 2.7
+            }
+            else if (gpa == 84) {
+                return 2.5
+            }
+            else if (gpa == 83) {
+                return 2.3
+            }
+            else if (gpa == 82) {
+                return 2.2
+            }
+            else if (gpa == 81) {
+                return 2.1
+            }
+            else if (gpa == 80) {
+                return 2.0
+            }
+            else if (gpa == 79) {
+                return 1.9
+            }
+            else if (gpa == 78) {
+                return 1.7
+            }
+            else if (gpa == 77) {
+                return 1.6
+            }
+            else if (gpa == 76) {
+                return 1.4
+            }
+            else if (gpa == 75) {
+                return 1.3
+            }
+            else if (gpa == 74) {
+                return 1.2
+            }
+            else if (gpa == 73) {
+                return 1.0
+            }
+            else if (gpa == 72) {
+                return 0.9
+            }
+            else if (gpa == 71) {
+                return 0.8
+            }
+            else if (gpa == 70) {
+                return 0.7
+            }
+            else {
+                return 0.0
+            }
+        }
     }
     
     // Function to add a done button on the LPG Keyboard
@@ -107,10 +476,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if (textField.tag == 100) {
-//            print(schoolTextField.text!)
+            print(schoolTextField.text!)
         }
         else if ( textField.tag == 101) {
-//            print(lpgTextField.text!)
+            // if LPG is done editing, update GPA labels
+            updateGpaLabels()
         }
     }
     
@@ -129,7 +499,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             let gradeTableVC = segue.destination as! GradeTableViewController
             
             // change the text of the title
-            gradeTableVC.navigationBar.title = ninthGradeLabel.text
+            gradeTableVC.navigationBar.title = "9th Grade"
 
             // pass data on to the next view
             gradeTableVC.year = ninth
@@ -139,7 +509,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             let gradeTableVC = segue.destination as! GradeTableViewController
             
             // change the text of the title
-            gradeTableVC.navigationBar.title = tenthGradeLabel.text
+            gradeTableVC.navigationBar.title = "10th Grade"
             
             // pass data on to the next view
             gradeTableVC.year = tenth
@@ -149,7 +519,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             let gradeTableVC = segue.destination as! GradeTableViewController
             
             // change the text of the title
-            gradeTableVC.navigationBar.title = eleventhGradeLabel.text
+            gradeTableVC.navigationBar.title = "11th Grade"
             
             // pass data on to the next view
             gradeTableVC.year = eleventh
@@ -158,7 +528,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             let gradeTableVC = segue.destination as! GradeTableViewController
             
             // change the text of the title
-            gradeTableVC.navigationBar.title = twelfthGradeLabel.text
+            gradeTableVC.navigationBar.title = "12th Grade"
             
             // pass data on to the next view
             gradeTableVC.year = twelfth

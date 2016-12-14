@@ -55,10 +55,20 @@ class Year: NSObject {
             
         // otherwise, average the grades and set the GPA
         var sum: Float = 0
+        var numberOfCredits: Float = 0
         for grade in self.grades {
             sum = sum + grade.getWeightedGrade()
+            if (grade.isHalfCredit == 0) {
+                // is full credit
+                numberOfCredits = numberOfCredits + Float(1.0)
+            }
+            else {
+                // is half credit
+                numberOfCredits = numberOfCredits + Float(0.5)
+            }
         }
-        return (sum / Float(numGrades))
+        
+        return (sum / numberOfCredits)
         
     }
 }

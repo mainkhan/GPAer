@@ -34,9 +34,31 @@ class Grade: NSObject {
         self.isHalfCredit = 0
     }
     
+    /**
+     This function will return the weighted grade used for GPA calculations
+     The weight factors in the "weight" of the grade (i.e. AP, Honors) 
+     and if the grade is half credit or not
+     */
     func getWeightedGrade() -> Float {
-        // TODO: Change this to return the weighted grade
-        return (self.grade)
+        var w = Float(0.0) // weight value init to 0
+        
+        if (weight == 1) {
+            // Honors weight
+            w = Float(5.0)
+        }
+        else if (weight == 2) {
+            // AP weight
+            w = Float(10.0)
+        }
+        
+        if (isHalfCredit == 0) {
+            // not half credit
+            return (self.grade + w)
+        }
+        else {
+            // is half credit
+            return ((self.grade + w )/2)
+        }
         
     }
     

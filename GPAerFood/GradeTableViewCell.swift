@@ -20,8 +20,9 @@ class GradeTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        // Set BG color to Pastel Orange 100, 88.6, 75.3
-        self.backgroundColor=UIColor(red: 1, green: 0.886, blue: 0.753, alpha: 1)
+        // Second Lightest Orange 100, 91.8, 82.7
+        self.backgroundColor=UIColor(red: 1, green: 0.918, blue: 0.827, alpha: 1)
+        
         
         // Set segmented control colors to Darker Orange 100, 53.7, 0
         weightControl.tintColor = UIColor(red: 1, green: 0.537, blue: 0, alpha: 1)
