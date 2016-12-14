@@ -106,9 +106,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
             var outputGpa = cumulativeSum / Float(numberOfYears)
             outputGpa = round(10 * outputGpa) / 10
             cumulativeGpa.text = String(outputGpa)
+            
+//            if outputGpa >= 3.3 {
+//                // Green 0, 83.9, 22
+//                cumulativeGpa.textColor = UIColor(red: 0, green: 0.839, blue: 0.22, alpha: 1)
+//            }
+//            else if outputGpa > 2.5 {
+//                // Yellow 80.8, 97.6, 0
+//                cumulativeGpa.textColor = UIColor(red: 0.808, green: 0.976, blue: 0, alpha: 1)
+//            }
+//            else {
+//                cumulativeGpa.textColor = UIColor.red
+//            }
+            
         }
         else {
             cumulativeGpa.text = String(0.0)
+//            cumulativeGpa.textColor = UIColor.red
         }
     }
     
@@ -124,6 +138,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
             // default LPG of 65
             return 65
         }
+    }
+    
+    @IBAction func clearAll () {
+        ninth = Year(whatGrade: 9)
+        tenth = Year(whatGrade: 10)
+        eleventh = Year(whatGrade: 11)
+        twelfth = Year(whatGrade: 12)
+        cumulativeGpa.text = String(0.0)
+        lpgTextField.text = ""
+        schoolTextField.text = ""
+        ninthGradeLabel.text = "9th Grade"
+        tenthGradeLabel.text = "10th Grade"
+        eleventhGradeLabel.text = "11th Grade"
+        twelfthGradeLabel.text = "12th Grade"
     }
     
     func getScaledGpa(gpa: Int, lpg: Int) -> Float {

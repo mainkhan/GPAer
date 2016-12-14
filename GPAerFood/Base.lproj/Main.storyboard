@@ -139,7 +139,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="GPA'er" id="AZR-rs-lpI">
-                        <barButtonItem key="rightBarButtonItem" title="Reset" id="Qdr-45-ZDW"/>
+                        <barButtonItem key="rightBarButtonItem" title="Reset" id="Qdr-45-ZDW">
+                            <connections>
+                                <action selector="clearAll" destination="BYZ-38-t0r" id="oxt-Ty-cf9"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="bottomView" destination="jRR-AK-ZZf" id="Jgo-8W-zoe"/>
